@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Nov  7 07:37:25 2023
-# Process ID: 14139
+# Start of session at: Tue Nov  7 11:19:52 2023
+# Process ID: 171397
 # Current directory: /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1
 # Command line: vivado -log AlohaHE_ComputeCoreWrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AlohaHE_ComputeCoreWrapper_0_0.tcl
 # Log file: /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1/AlohaHE_ComputeCoreWrapper_0_0.vds

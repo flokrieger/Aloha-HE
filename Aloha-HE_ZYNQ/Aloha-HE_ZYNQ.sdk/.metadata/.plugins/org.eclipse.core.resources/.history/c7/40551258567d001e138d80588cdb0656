@@ -31,8 +31,8 @@
  * This uses the DMA and simulates productive use of the software.
  * No intermediate results are verified for correctness.
  */
-//#define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
-//#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
+#define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
+#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
 
 /* Uncommenting these macros execute the corresponding testcase.
  * The FFT result differs slightly depending on the twiddle factor
@@ -46,7 +46,7 @@
 //#define RNS						// Tests the RNS
 //#define NTT						// Tests the NTT
 //#define INV_NTT					// Tests the inverse NTT
-#define INT_TO_FLP_DOUBLE         // Tests the conversion of integers to floating-point numbers
+//#define INT_TO_FLP_DOUBLE         // Tests the conversion of integers to floating-point numbers
 //#define PWM						// Tests the point-wise multiplication
 //#define EXPAND					// Tests the Expansion of plaintexts sent to the co-processor
 //#define RANDOM_SAMPLING			// Tests the sampling of error sampling using Trivium

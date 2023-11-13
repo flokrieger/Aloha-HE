@@ -32,7 +32,7 @@
  * No intermediate results are verified for correctness.
  */
 #define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
-#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
+//#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
 
 /* Uncommenting these macros execute the corresponding testcase.
  * The FFT result differs slightly depending on the twiddle factor

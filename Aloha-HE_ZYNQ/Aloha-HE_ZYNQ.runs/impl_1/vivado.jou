@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Nov  7 08:26:52 2023
-# Process ID: 42474
+# Start of session at: Tue Nov  7 10:18:34 2023
+# Process ID: 105231
 # Current directory: /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/impl_1
 # Command line: vivado -log AlohaHE_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AlohaHE_wrapper.tcl -notrace
 # Log file: /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/impl_1/AlohaHE_wrapper.vdi

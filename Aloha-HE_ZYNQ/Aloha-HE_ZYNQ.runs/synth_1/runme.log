@@ -12,59 +12,59 @@ source AlohaHE_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.852 ; gain = 88.043 ; free physical = 2027 ; free virtual = 8196
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1503.621 ; gain = 127.797 ; free physical = 471 ; free virtual = 2060
 Command: synth_design -top AlohaHE_wrapper -part xc7z020clg400-1 -fanout_limit 400 -fsm_extraction one_hot -resource_sharing off -no_lc -shreg_min_size 5
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 42294 
+INFO: Helper process launched with PID 104503 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1830.980 ; gain = 152.688 ; free physical = 1612 ; free virtual = 7806
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1830.746 ; gain = 152.719 ; free physical = 160 ; free virtual = 1757
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE_wrapper' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/hdl/AlohaHE_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:13]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_AXISlave8Ports_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_AXISlave8Ports_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_AXISlave8Ports_0_0' (1#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_AXISlave8Ports_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_ComputeCoreWrapper_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_ComputeCoreWrapper_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_ComputeCoreWrapper_0_0' (2#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_ComputeCoreWrapper_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_axi_bram_ctrl_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_axi_bram_ctrl_0_0' (3#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_AXISlave8Ports_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_AXISlave8Ports_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_AXISlave8Ports_0_0' (1#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_AXISlave8Ports_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_ComputeCoreWrapper_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_ComputeCoreWrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_ComputeCoreWrapper_0_0' (2#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_ComputeCoreWrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_axi_bram_ctrl_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_axi_bram_ctrl_0_0' (3#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_axi_bram_ctrl_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0' of module 'AlohaHE_axi_bram_ctrl_0_0' has 40 connections declared, but only 38 given [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:341]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_axi_cdma_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_axi_cdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_axi_cdma_0_0' (4#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_axi_cdma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_axi_cdma_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_axi_cdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_axi_cdma_0_0' (4#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_axi_cdma_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_cdma_0' of module 'AlohaHE_axi_cdma_0_0' has 50 connections declared, but only 48 given [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:380]
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE_axi_interconnect_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:807]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_HUXNNQ' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2192]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_HUXNNQ' (5#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2192]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1JHKEH1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2422]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_0' (6#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_0' (6#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1JHKEH1' (7#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2422]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1JBLOD6' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:3377]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1JBLOD6' (8#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:3377]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_xbar_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_xbar_0' (9#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_xbar_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_xbar_0' (9#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_axi_interconnect_0_0' (10#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:807]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_processing_system7_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_processing_system7_0_0' (11#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_processing_system7_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_processing_system7_0_0' (11#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'AlohaHE_processing_system7_0_0' has 149 connections declared, but only 141 given [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:531]
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE_ps7_0_axi_periph_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:1577]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1FBR1H4' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:3072]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_1' (12#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_1' (12#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1FBR1H4' (13#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:3072]
 INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_ps7_0_axi_periph_0' (14#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:1577]
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE_ps7_0_axi_periph_1_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:1892]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1D4WZB3' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2782]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_2' (15#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_auto_pc_2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_auto_pc_2' (15#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_auto_pc_2_stub.v:6]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'AlohaHE_auto_pc_2' has 59 connections declared, but only 56 given [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:3013]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1D4WZB3' (16#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:2782]
 INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_ps7_0_axi_periph_1_0' (17#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:1892]
-INFO: [Synth 8-6157] synthesizing module 'AlohaHE_rst_ps7_0_100M_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_rst_ps7_0_100M_0' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-42150-ipn075/realtime/AlohaHE_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AlohaHE_rst_ps7_0_100M_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_rst_ps7_0_100M_0' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/.Xil/Vivado-103500-ipn075/realtime/AlohaHE_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'AlohaHE_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:798]
 INFO: [Synth 8-6155] done synthesizing module 'AlohaHE' (19#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/synth/AlohaHE.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'AlohaHE_wrapper' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/hdl/AlohaHE_wrapper.v:12]
@@ -93,7 +93,7 @@ WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port
 WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1891.699 ; gain = 213.406 ; free physical = 1636 ; free virtual = 7830
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1891.465 ; gain = 213.438 ; free physical = 237 ; free virtual = 1793
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -106,10 +106,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.668 ; gain = 216.375 ; free physical = 1637 ; free virtual = 7832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.434 ; gain = 217.406 ; free physical = 238 ; free virtual = 1794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.668 ; gain = 216.375 ; free physical = 1637 ; free virtual = 7832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.434 ; gain = 217.406 ; free physical = 238 ; free virtual = 1794
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -139,20 +139,20 @@ Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.ru
 Finished Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.215 ; gain = 0.000 ; free physical = 1533 ; free virtual = 7739
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.043 ; gain = 0.000 ; free physical = 153 ; free virtual = 1670
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2007.215 ; gain = 0.000 ; free physical = 1532 ; free virtual = 7739
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2008.043 ; gain = 0.000 ; free physical = 150 ; free virtual = 1666
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1581 ; free virtual = 7788
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 172 ; free virtual = 1639
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1581 ; free virtual = 7788
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 172 ; free virtual = 1639
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -432,10 +432,10 @@ Applied set_property DONT_TOUCH = true for AlohaHE_i/axi_interconnect_0/m01_coup
 Applied set_property DONT_TOUCH = true for AlohaHE_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for AlohaHE_i/ps7_0_axi_periph_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1582 ; free virtual = 7788
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 171 ; free virtual = 1639
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1583 ; free virtual = 7790
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 169 ; free virtual = 1637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -485,7 +485,7 @@ WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port
 WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design AlohaHE_axi_interconnect_0_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1566 ; free virtual = 7776
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 160 ; free virtual = 1631
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -500,13 +500,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'AlohaHE_i/axi_bram_ctrl_0
 INFO: [Synth 8-5578] Moved timing constraint from pin 'AlohaHE_i/processing_system7_0/FCLK_CLK0' to pin 'AlohaHE_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1396 ; free virtual = 7613
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 151 ; free virtual = 1520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1395 ; free virtual = 7613
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 151 ; free virtual = 1520
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -518,7 +518,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1394 ; free virtual = 7611
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1514
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -542,7 +542,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7610
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 155 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -555,7 +555,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7610
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 155 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,25 +567,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7611
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7611
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7611
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7611
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -637,25 +637,25 @@ Report Instance Areas:
 |8     |      s00_couplers     |s00_couplers_imp_1D4WZB3     |   177|
 +------+-----------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1393 ; free virtual = 7611
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 154 ; free virtual = 1512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2007.215 ; gain = 216.375 ; free physical = 1452 ; free virtual = 7670
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.215 ; gain = 328.922 ; free physical = 1452 ; free virtual = 7670
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2008.043 ; gain = 217.406 ; free physical = 211 ; free virtual = 1569
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.043 ; gain = 330.016 ; free physical = 211 ; free virtual = 1569
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.215 ; gain = 0.000 ; free physical = 1412 ; free virtual = 7630
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.043 ; gain = 0.000 ; free physical = 151 ; free virtual = 1509
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 55 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2007.215 ; gain = 505.363 ; free physical = 1492 ; free virtual = 7710
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.215 ; gain = 0.000 ; free physical = 1492 ; free virtual = 7710
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2008.043 ; gain = 504.422 ; free physical = 237 ; free virtual = 1596
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.043 ; gain = 0.000 ; free physical = 237 ; free virtual = 1596
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/synth_1/AlohaHE_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file AlohaHE_wrapper_utilization_synth.rpt -pb AlohaHE_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 08:26:50 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 10:18:32 2023...

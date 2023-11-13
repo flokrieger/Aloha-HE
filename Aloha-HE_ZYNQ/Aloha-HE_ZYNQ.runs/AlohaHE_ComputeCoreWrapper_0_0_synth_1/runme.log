@@ -9,7 +9,7 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source AlohaHE_ComputeCoreWrapper_0_0.tcl -notrace
-Command: synth_design -top AlohaHE_ComputeCoreWrapper_0_0 -part xc7z020clg400-1 -fanout_limit 400 -fsm_extraction one_hot -resource_sharing off -no_lc -shreg_min_size 5 -mode out_of_context
+Command: synth_design -top AlohaHE_ComputeCoreWrapper_0_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
 WARNING: [IP_Flow 19-3571] IP 'AlohaHE_ComputeCoreWrapper_0_0' is restricted:
 * Module reference is stale and needs refreshing.
@@ -17,15 +17,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 101673 
+INFO: Helper process launched with PID 91573 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1788.664 ; gain = 152.719 ; free physical = 1521 ; free virtual = 6387
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1788.312 ; gain = 152.688 ; free physical = 158 ; free virtual = 2701
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'AlohaHE_ComputeCoreWrapper_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_ComputeCoreWrapper_0_0/synth/AlohaHE_ComputeCoreWrapper_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'ComputeCoreWrapper' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/ComputeCoreWrapper.v:3]
 INFO: [Synth 8-6157] synthesizing module 'ComputeCore' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/ComputeCore.v:5]
 	Parameter FFT_ON_THE_FLY_GENERATION bound to: 1 - type: integer 
-	Parameter PROVIDE_DEBUG_IO bound to: 1 - type: integer 
+	Parameter PROVIDE_DEBUG_IO bound to: 0 - type: integer 
 	Parameter BRAM_RD_LAT bound to: 2 - type: integer 
 	Parameter N bound to: 8192 - type: integer 
 	Parameter LOGN bound to: 13 - type: integer 
@@ -1113,6 +1113,7 @@ INFO: [Synth 8-6157] synthesizing module 'IntToFlPDouble' [/home/fkrieger/Deskto
 WARNING: [Synth 8-3936] Found unconnected internal register 'scale_power_precomp_DP_reg' and it is trimmed from '12' to '11' bits. [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/FloatingPoint/IntToFlP.sv:34]
 INFO: [Synth 8-6155] done synthesizing module 'IntToFlPDouble' (61#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/FloatingPoint/IntToFlP.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'IntToFlPWrapper' (62#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/FloatingPoint/IntToFlPWrapper.sv:5]
+WARNING: [Synth 8-6014] Unused sequential element real_part_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/ComputeCore.v:175]
 INFO: [Synth 8-6155] done synthesizing module 'ComputeCore' (63#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/ComputeCore.v:5]
 INFO: [Synth 8-6157] synthesizing module 'ISA_control' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Common/ISA_control.v:6]
 INFO: [Synth 8-638] synthesizing module 'INS_RAM' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/ip/INS_RAM/synth/INS_RAM.vhd:71]
@@ -1257,7 +1258,7 @@ WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port q
 WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qspo[30]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:05:03 ; elapsed = 00:05:21 . Memory (MB): peak = 2324.523 ; gain = 688.578 ; free physical = 1587 ; free virtual = 6464
+Finished RTL Elaboration : Time (s): cpu = 00:05:45 ; elapsed = 00:06:06 . Memory (MB): peak = 2318.203 ; gain = 682.578 ; free physical = 399 ; free virtual = 1882
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1270,10 +1271,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:04 ; elapsed = 00:05:22 . Memory (MB): peak = 2324.523 ; gain = 688.578 ; free physical = 1604 ; free virtual = 6481
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:46 ; elapsed = 00:06:07 . Memory (MB): peak = 2318.203 ; gain = 682.578 ; free physical = 408 ; free virtual = 1891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:04 ; elapsed = 00:05:22 . Memory (MB): peak = 2324.523 ; gain = 688.578 ; free physical = 1604 ; free virtual = 6481
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:46 ; elapsed = 00:06:07 . Memory (MB): peak = 2318.203 ; gain = 682.578 ; free physical = 408 ; free virtual = 1891
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 185 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1287,20 +1288,20 @@ Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.ru
 Finished Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1339 ; free virtual = 6216
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2408.047 ; gain = 0.000 ; free physical = 160 ; free virtual = 1630
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.70 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1324 ; free virtual = 6202
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2408.047 ; gain = 0.000 ; free physical = 147 ; free virtual = 1619
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:05:28 ; elapsed = 00:05:42 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1557 ; free virtual = 6435
+Finished Constraint Validation : Time (s): cpu = 00:06:13 ; elapsed = 00:06:31 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 285 ; free virtual = 1812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:28 ; elapsed = 00:05:42 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1557 ; free virtual = 6435
+Finished Loading Part and Timing Information : Time (s): cpu = 00:06:13 ; elapsed = 00:06:31 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 285 ; free virtual = 1812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1424,37 +1425,37 @@ Applied set_property DONT_TOUCH = true for inst/CORE/ntt_v_bank1. (constraint fi
 Applied set_property DONT_TOUCH = true for inst/CORE/fft_bram/higher_bank0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/CORE/fft_bram/higher_bank1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:28 ; elapsed = 00:05:42 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1509 ; free virtual = 6386
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:14 ; elapsed = 00:06:32 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 238 ; free virtual = 1766
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ISA_control'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  iSTATE |                         00000001 |                              000
-                 iSTATE5 |                         00000010 |                              001
-                 iSTATE0 |                         00000100 |                              010
-                 iSTATE1 |                         00001000 |                              011
-                 iSTATE2 |                         00010000 |                              100
-                 iSTATE3 |                         00100000 |                              101
-                 iSTATE4 |                         01000000 |                              110
-                 iSTATE6 |                         10000000 |                              111
+                  iSTATE |                              000 |                              000
+                 iSTATE5 |                              001 |                              001
+                 iSTATE0 |                              010 |                              010
+                 iSTATE1 |                              011 |                              011
+                 iSTATE2 |                              100 |                              100
+                 iSTATE3 |                              101 |                              101
+                 iSTATE4 |                              110 |                              110
+                 iSTATE6 |                              111 |                              111
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ISA_control'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ISA_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:34 ; elapsed = 00:05:49 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1522 ; free virtual = 6406
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:21 ; elapsed = 00:06:40 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 158 ; free virtual = 1678
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |UnifiedTransformation__GB0 |           1|     31244|
+|1     |UnifiedTransformation__GB0 |           1|     31226|
 |2     |UnifiedTransformation__GB1 |           1|     24308|
 |3     |UnifiedTransformation__GB2 |           1|       108|
-|4     |UnifiedTransformation__GB3 |           1|     27059|
+|4     |UnifiedTransformation__GB3 |           1|     27023|
 |5     |UnifiedTransformation__GB4 |           1|      8749|
-|6     |ComputeCore__GC0           |           1|     15355|
-|7     |ComputeCoreWrapper__GC0    |           1|       241|
+|6     |ComputeCore__GC0           |           1|     13290|
+|7     |ComputeCoreWrapper__GC0    |           1|       250|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1606,32 +1607,6 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unif
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unified_transformi_4/ntt_butterfly_2/\out_a_scale/adder/integer_addition_1DP_reg[54] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unified_transformi_5/ntt_butterfly_0/\out_b_scale/adder/integer_addition_1DP_reg[54] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/unified_transformi_5/ntt_butterfly_0/\out_a_scale/adder/integer_addition_1DP_reg[54] )
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][0]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][0]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][1]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][1]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][2]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][3]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][3]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][4]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][4]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][5]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][5]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][6]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][6]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][7]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][7]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][8]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][8]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][9]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][9]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][10]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][10]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][11]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][11]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/buffer_reg[0][12]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/buffer_reg[0][12]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][0]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][1]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][1]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][2]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][2]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][3]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][3]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][4]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][4]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][5]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][5]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][6]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][6]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][7]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][7]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][8]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][8]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][9]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][9]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][10]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][10]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][11]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][11]'
-INFO: [Synth 8-3886] merging instance 'inst/COREi_6/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][12]' (FD) to 'inst/COREi_6/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][12]'
 INFO: [Synth 8-3886] merging instance 'inst/COREi_6/pwm/c_rd_addr_delay/buffer_reg[0][0]' (FD) to 'inst/COREi_6/pwm_a_bank_sel_delay/buffer_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'inst/COREi_6/pwm/c_rd_addr_delay/genblk1[1].buffer_reg[1][0]' (FD) to 'inst/COREi_6/pwm_a_bank_sel_delay/genblk1[1].buffer_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'inst/COREi_6/pwm/result_wr_addr_delay/genblk1[15].buffer_reg[15][0]' (FD) to 'inst/COREi_6/pwm_c_bank_sel_delay/buffer_reg[0][0]'
@@ -1663,55 +1638,78 @@ INFO: [Synth 8-3886] merging instance 'inst/COREi_6/random_sampling/q_DP_reg[22]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/COREi_6/random_sampling/\q_DP_reg[23] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\status_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:49 ; elapsed = 00:07:08 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1348 ; free virtual = 6307
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:51 ; elapsed = 00:08:15 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 708 ; free virtual = 1987
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |UnifiedTransformation__GB0 |           1|     16827|
+|1     |UnifiedTransformation__GB0 |           1|     16855|
 |2     |UnifiedTransformation__GB1 |           1|     11495|
 |3     |UnifiedTransformation__GB2 |           1|       324|
-|4     |UnifiedTransformation__GB3 |           1|     25220|
+|4     |UnifiedTransformation__GB3 |           1|     25276|
 |5     |UnifiedTransformation__GB4 |           1|      8178|
-|6     |ComputeCore__GC0           |           1|     13714|
-|7     |ComputeCoreWrapper__GC0    |           1|       164|
+|6     |ComputeCore__GC0           |           1|     12186|
+|7     |ComputeCoreWrapper__GC0    |           1|       168|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:00 ; elapsed = 00:07:19 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1221 ; free virtual = 6176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:03 ; elapsed = 00:08:28 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 475 ; free virtual = 1751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:09:04 ; elapsed = 00:09:26 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1149 ; free virtual = 6113
+Finished Timing Optimization : Time (s): cpu = 00:09:00 ; elapsed = 00:09:26 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 283 ; free virtual = 1581
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------------------+------------+----------+
-|      |RTL Partition             |Replication |Instances |
-+------+--------------------------+------------+----------+
-|1     |ComputeCoreWrapper__GC0   |           1|       164|
-|2     |ComputeCoreWrapper_GT0    |           1|     13665|
-|3     |ComputeCoreWrapper_GT2    |           1|      8419|
-|4     |ComputeCoreWrapper_GT0__5 |           1|     10000|
-|5     |ComputeCoreWrapper_GT1    |           1|     43674|
-+------+--------------------------+------------+----------+
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |UnifiedTransformation__GB1 |           1|     11495|
+|2     |ComputeCoreWrapper__GC0    |           1|       168|
+|3     |ComputeCoreWrapper_GT0     |           1|     11005|
+|4     |ComputeCoreWrapper_GT1     |           1|     13821|
+|5     |ComputeCoreWrapper_GT0__1  |           1|     37993|
++------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/rns_rd_data_sel_delayed/buffer_reg[0][0]' (FD) to 'inst/CORE/rns/rns_error_polys/address_delay/buffer_reg[0][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/rns_rd_data_sel_delayed/genblk1[1].buffer_reg[1][0]' (FD) to 'inst/CORE/rns/rns_error_polys/address_delay/genblk1[1].buffer_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/rns_rd_data_sel_delayed/buffer_reg[0][0]' (FD) to 'inst/CORE/rns/e0_rd_addr_delay/buffer_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/rns_rd_data_sel_delayed/genblk1[1].buffer_reg[1][0]' (FD) to 'inst/CORE/rns/e0_rd_addr_delay/genblk1[1].buffer_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/key_rd_data_sel_delayed/buffer_reg[0][0]' (FD) to 'inst/CORE/pwm_a_bank_sel_delay/buffer_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/fft_bram/key_rd_data_sel_delayed/genblk1[1].buffer_reg[1][0]' (FD) to 'inst/CORE/pwm_a_bank_sel_delay/genblk1[1].buffer_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/buffer_reg[0][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_forward_delay/genblk1[2].buffer_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/buffer_reg[0][0]' (FDR) to 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[1].buffer_reg[1][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[1].buffer_reg[1][0]' (FDR) to 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[2].buffer_reg[2][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[2].buffer_reg[2][0]' (FDR) to 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[3].buffer_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[3].buffer_reg[3][0]' (FDR) to 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[4].buffer_reg[4][0]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[4].buffer_reg[4][0]' (FDR) to 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[5].buffer_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[1].buffer_reg[1][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/buffer_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[2].buffer_reg[2][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[1].buffer_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[3].buffer_reg[3][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[2].buffer_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[4].buffer_reg[4][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[3].buffer_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[5].buffer_reg[5][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[4].buffer_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[28]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[29]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[30]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[31]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[32]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[33]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[34]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[35]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[36]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[37]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[38]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[39]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[40]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[41]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[42]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[43]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[44]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[45]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[46]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[47]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[6].buffer_reg[6][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[5].buffer_reg[5][0]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[0]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[1]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[2]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[2]'
@@ -1740,13 +1738,16 @@ INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[25]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[25]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[26]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[26]'
 INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[27]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[27]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[28]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[28]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[29]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[29]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[30]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[30]'
-INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[31]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[48]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[48]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[49]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[50]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[51]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[7].buffer_reg[7][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[6].buffer_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/fft_butterfly/add_stage/sub_and_normalize_real/significant_b_2aDP_reg[52]' (FD) to 'inst/CORE/unified_transform/fft_butterfly/add_stage/add_and_normalize_real/significant_b_2aDP_reg[52]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/unified_transform/store_logic/valid_b_fft_forward_delay/genblk1[8].buffer_reg[8][0]' (FDR) to 'inst/CORE/unified_transform/load_logic/valid_a_inverse_delay/genblk1[7].buffer_reg[7][0]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:27 ; elapsed = 00:09:50 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1161 ; free virtual = 6123
+Finished Technology Mapping : Time (s): cpu = 00:09:25 ; elapsed = 00:09:53 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 544 ; free virtual = 1799
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1771,7 +1772,7 @@ INFO: [Synth 8-5365] Flop CORE/int_to_flp/int_to_flp/scale_power_precomp_DP_reg[
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:09:30 ; elapsed = 00:09:54 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1164 ; free virtual = 6127
+Finished IO Insertion : Time (s): cpu = 00:09:29 ; elapsed = 00:09:57 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 547 ; free virtual = 1802
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1784,7 +1785,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:09:31 ; elapsed = 00:09:54 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1164 ; free virtual = 6127
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:29 ; elapsed = 00:09:57 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 544 ; free virtual = 1799
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1796,25 +1797,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:36 ; elapsed = 00:09:59 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1160 ; free virtual = 6123
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:39 ; elapsed = 00:10:07 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 416 ; free virtual = 1677
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:09:36 ; elapsed = 00:10:00 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1160 ; free virtual = 6123
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:40 ; elapsed = 00:10:08 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 416 ; free virtual = 1677
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:37 ; elapsed = 00:10:00 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1160 ; free virtual = 6123
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:41 ; elapsed = 00:10:09 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 430 ; free virtual = 1691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:09:37 ; elapsed = 00:10:00 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1158 ; free virtual = 6121
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:41 ; elapsed = 00:10:09 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 429 ; free virtual = 1691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1830,19 +1831,19 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |CARRY4     |  1606|
+|1     |CARRY4     |  1579|
 |2     |DSP48E1    |    40|
 |3     |DSP48E1_1  |    40|
 |4     |DSP48E1_2  |     8|
 |5     |DSP48E1_3  |     8|
 |6     |DSP48E1_4  |     4|
-|7     |LUT1       |  1217|
-|8     |LUT2       |  3033|
-|9     |LUT3       |  4831|
-|10    |LUT4       |  2968|
-|11    |LUT5       |  4312|
-|12    |LUT6       |  5560|
-|13    |MUXF7      |    78|
+|7     |LUT1       |  1181|
+|8     |LUT2       |  2985|
+|9     |LUT3       |  4790|
+|10    |LUT4       |  2827|
+|11    |LUT5       |  3864|
+|12    |LUT6       |  5459|
+|13    |MUXF7      |    70|
 |14    |RAM32M     |     7|
 |15    |RAMB18E1   |     2|
 |16    |RAMB18E1_1 |     3|
@@ -1850,43 +1851,43 @@ Report Cell Usage:
 |18    |RAMB36E1_1 |     2|
 |19    |RAMB36E1_2 |     1|
 |20    |RAMB36E1_3 |     1|
-|21    |SRL16E     |   125|
+|21    |SRL16E     |   609|
 |22    |SRLC32E    |    34|
-|23    |FDRE       | 18096|
-|24    |FDSE       |    24|
+|23    |FDRE       | 17023|
+|24    |FDSE       |    23|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:37 ; elapsed = 00:10:01 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1158 ; free virtual = 6121
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:41 ; elapsed = 00:10:09 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 430 ; free virtual = 1691
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 45 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:09:18 ; elapsed = 00:09:45 . Memory (MB): peak = 2414.367 ; gain = 688.578 ; free physical = 1227 ; free virtual = 6190
-Synthesis Optimization Complete : Time (s): cpu = 00:09:37 ; elapsed = 00:10:01 . Memory (MB): peak = 2414.367 ; gain = 778.422 ; free physical = 1228 ; free virtual = 6191
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:09:19 ; elapsed = 00:09:51 . Memory (MB): peak = 2408.047 ; gain = 682.578 ; free physical = 490 ; free virtual = 1751
+Synthesis Optimization Complete : Time (s): cpu = 00:09:42 ; elapsed = 00:10:10 . Memory (MB): peak = 2408.047 ; gain = 772.422 ; free physical = 490 ; free virtual = 1751
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1876 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1841 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1121 ; free virtual = 6090
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2424.055 ; gain = 0.000 ; free physical = 592 ; free virtual = 1877
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 7 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-464 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+464 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:54 ; elapsed = 00:10:17 . Memory (MB): peak = 2414.367 ; gain = 1006.922 ; free physical = 1271 ; free virtual = 6239
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1271 ; free virtual = 6239
+synth_design: Time (s): cpu = 00:10:01 ; elapsed = 00:10:29 . Memory (MB): peak = 2424.055 ; gain = 1016.961 ; free physical = 751 ; free virtual = 2036
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2424.055 ; gain = 0.000 ; free physical = 749 ; free virtual = 2034
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1/AlohaHE_ComputeCoreWrapper_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1277 ; free virtual = 6254
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2448.066 ; gain = 24.012 ; free physical = 739 ; free virtual = 2043
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1174] Renamed 1117 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1233 ; free virtual = 6253
+INFO: [Coretcl 2-1174] Renamed 1116 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2448.066 ; gain = 0.000 ; free physical = 719 ; free virtual = 2074
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1/AlohaHE_ComputeCoreWrapper_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1233 ; free virtual = 6253
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2448.066 ; gain = 0.000 ; free physical = 749 ; free virtual = 2110
 INFO: [runtcl-4] Executing : report_utilization -file AlohaHE_ComputeCoreWrapper_0_0_utilization_synth.rpt -pb AlohaHE_ComputeCoreWrapper_0_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2414.367 ; gain = 0.000 ; free physical = 1126 ; free virtual = 6198
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 10:28:35 2023...
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2448.066 ; gain = 0.000 ; free physical = 453 ; free virtual = 1956
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 10:17:17 2023...

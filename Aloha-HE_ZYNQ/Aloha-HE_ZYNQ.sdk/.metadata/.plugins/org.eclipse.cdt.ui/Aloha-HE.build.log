@@ -1,8 +1,8 @@
-09:08:50 **** Incremental Build of configuration Debug for project Aloha-HE ****
+11:15:23 **** Incremental Build of configuration Debug for project Aloha-HE ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
 
-09:08:50 Build Finished (took 225ms)
+11:15:23 Build Finished (took 220ms)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1699339037">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1699352384">
   <File Type="VDS-TIMING-PB" Name="AlohaHE_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="AlohaHE_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="AlohaHE_wrapper.dcp"/>
@@ -454,12 +454,12 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design">
-      <Option Id="KeepEquivalentRegisters">1</Option>
       <Option Id="ShregMinSize">5</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
       <Option Id="FsmExtraction">1</Option>
       <Option Id="ResourceSharing">2</Option>
-      <Option Id="RepFanoutThreshold">400</Option>
       <Option Id="NoCombineLuts">1</Option>
+      <Option Id="RepFanoutThreshold">400</Option>
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="AlohaHE_AXISlave8Ports_0_0"/>

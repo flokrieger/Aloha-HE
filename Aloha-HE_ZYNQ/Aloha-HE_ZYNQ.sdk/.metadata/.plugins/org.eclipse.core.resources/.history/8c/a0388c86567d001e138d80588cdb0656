@@ -5,7 +5,7 @@
  * for testing the design.
  *
  * The single test cases are executed if the
- * corresponding makro is defined
+ * corresponding macro is defined
  * (i.e. uncommented). The reference output
  * is generated via Microsoft SEAL and in the
  * respective header files.
@@ -24,7 +24,7 @@
 #include "xil_cache.h"
 #include "../communication.h"
 #include "../instruction.h"
-#include "../xtime_l.h"
+#include <xtime_l.h>
 #include "../ckksAccelerator.h"
 
 /* Test and benchmark end-to-end encode+encrypt and decrypt+decode.
@@ -34,16 +34,16 @@
 //#define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
 //#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
 
-/* Uncommenting these makros execute the corresponding testcase.
+/* Uncommenting these macros execute the corresponding testcase.
  * The FFT result differs slightly depending on the twiddle factor
  * handling due to numerical inaccuracies. Hence, generated and
  * stored twiddle factor designs come with their own testcase.
  */
 //#define DOUBLE_FFT_GENERATED		// Tests the FFT with generated twiddle factors
 //#define DOUBLE_INV_FFT_GENERATED  // Tests the inverse FFT with generated twiddle factors
-#define DOUBLE_FFT_STORED         // Tests the FFT with stored twiddle factors
+//#define DOUBLE_FFT_STORED         // Tests the FFT with stored twiddle factors
 //#define DOUBLE_INV_FFT_STORED		// Tests the inverse FFT with stored twiddle factors
-//#define RNS						// Tests the RNS
+#define RNS						// Tests the RNS
 //#define NTT						// Tests the NTT
 //#define INV_NTT					// Tests the inverse NTT
 //#define INT_TO_FLP_DOUBLE         // Tests the conversion of integers to floating-point numbers
@@ -59,13 +59,14 @@
 //#define FULL_DECRYPTION_DMA		// Tests a full decode+decrypt procedure using DMA
 
 //#define BENCH						// Runs the benchmark code to profile latency of each step
+									// Note: undefine the PERFORMANCE macro in communication.c to obtain co-processor cycle counts
 
 #define DO_INTERMEDIATE_TESTS 1 	// Checks every intermediate result for correctness if 1
 
 /***************************************************************************************************/
 
-const uint64_t CPU_FREQ_MHZ = 200;    // clock frequency of host CPU
-const uint64_t COPROC_FREQ_MHZ = 200; // clock frequency of co-processor
+const uint64_t CPU_FREQ_MHZ = 650;    // clock frequency of host CPU
+const uint64_t COPROC_FREQ_MHZ = 130; // clock frequency of co-processor
 
 #define ALIGN __attribute__((aligned(8192)))
 
@@ -1284,7 +1285,7 @@ void test_timing()
 	printf("\n\nStart timing test\n\n");
 	XTime start, end;
 	XTime_GetTime(&start);
-	for(uint32_t i = 0; i < (1<<27); ++i)
+	for(uint32_t i = 0; i < (1<<30); ++i)
 		;
 	XTime_GetTime(&end);
 	printf("Time consumed: %llu cpu cc, %.0f us\n",2*(end-start), 2.0*(end-start)/CPU_FREQ_MHZ);

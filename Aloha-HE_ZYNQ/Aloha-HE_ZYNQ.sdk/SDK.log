@@ -4583,3 +4583,334 @@ con
 
 09:09:00 INFO  : Launch script is exported to file '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_aloha-he.elf_on_local.tcl'
 09:09:14 INFO  : Disconnected from the channel tcfchan#19.
+09:25:08 INFO  : Registering command handlers for SDK TCF services
+09:25:11 INFO  : Launching XSCT server: xsct -n -interactive /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/temp_xsdb_launch_script.tcl
+09:25:17 INFO  : XSCT server has started successfully.
+09:25:17 INFO  : Successfully done setting XSCT server connection channel  
+09:25:17 INFO  : Successfully done setting SDK workspace  
+09:25:17 INFO  : Processing command line option -hwspec /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper.hdf.
+09:25:18 INFO  : Checking for hwspec changes in the project AlohaHE_wrapper_hw_platform_0.
+11:12:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1699350414000,  Project:1699343352000
+11:12:10 INFO  : Project AlohaHE_wrapper_hw_platform_0's source hardware specification located at /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:12:12 INFO  : Copied contents of /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper.hdf into /AlohaHE_wrapper_hw_platform_0/system.hdf.
+11:12:16 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:12:17 INFO  : 
+11:12:18 INFO  : Updating hardware inferred compiler options for Aloha-HE.
+11:12:18 INFO  : Clearing existing target manager status.
+11:12:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:12:19 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:13:15 INFO  : 'jtag frequency' command is executed.
+11:13:15 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:15 INFO  : Context for 'APU' is selected.
+11:13:15 INFO  : System reset is completed.
+11:13:18 INFO  : 'after 3000' command is executed.
+11:13:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:13:20 INFO  : FPGA configured successfully with bitstream "/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit"
+11:13:20 INFO  : Context for 'APU' is selected.
+11:13:20 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:13:20 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:21 INFO  : Context for 'APU' is selected.
+11:13:21 INFO  : 'ps7_init' command is executed.
+11:13:21 INFO  : 'ps7_post_config' command is executed.
+11:13:21 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:21 INFO  : Disconnected from the channel tcfchan#1.
+11:13:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:13:34 INFO  : 'fpga -state' command is executed.
+11:13:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:13:35 INFO  : 'jtag frequency' command is executed.
+11:13:35 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:35 INFO  : Context for 'APU' is selected.
+11:13:35 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:13:35 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:35 INFO  : Context for 'APU' is selected.
+11:13:35 INFO  : 'stop' command is executed.
+11:13:35 INFO  : 'ps7_init' command is executed.
+11:13:35 INFO  : 'ps7_post_config' command is executed.
+11:13:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:13:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:41 INFO  : The application '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:13:41 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:41 INFO  : 'con' command is executed.
+11:13:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+11:13:41 INFO  : Disconnected from the channel tcfchan#2.
+11:13:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:13:54 INFO  : 'jtag frequency' command is executed.
+11:13:54 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:54 INFO  : Context for 'APU' is selected.
+11:13:54 INFO  : System reset is completed.
+11:13:57 INFO  : 'after 3000' command is executed.
+11:13:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:14:00 INFO  : FPGA configured successfully with bitstream "/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit"
+11:14:00 INFO  : Context for 'APU' is selected.
+11:14:00 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:14:00 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:00 INFO  : Context for 'APU' is selected.
+11:14:00 INFO  : 'ps7_init' command is executed.
+11:14:00 INFO  : 'ps7_post_config' command is executed.
+11:14:00 INFO  : 'configparams force-mem-access 0' command is executed.
+11:14:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:14:00 INFO  : Disconnected from the channel tcfchan#3.
+11:14:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:14:01 INFO  : 'fpga -state' command is executed.
+11:14:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:01 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:14:01 INFO  : 'jtag frequency' command is executed.
+11:14:01 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:02 INFO  : Context for 'APU' is selected.
+11:14:02 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:14:02 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:02 INFO  : Context for 'APU' is selected.
+11:14:02 INFO  : 'stop' command is executed.
+11:14:02 INFO  : 'ps7_init' command is executed.
+11:14:02 INFO  : 'ps7_post_config' command is executed.
+11:14:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:14:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:08 INFO  : The application '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:14:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:14:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:14:08 INFO  : Memory regions updated for context APU
+11:14:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:08 INFO  : 'con' command is executed.
+11:14:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+11:14:08 INFO  : Launch script is exported to file '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_aloha-he.elf_on_local.tcl'
+11:14:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:43 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:14:43 INFO  : 'jtag frequency' command is executed.
+11:14:43 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:43 INFO  : Context for 'APU' is selected.
+11:14:43 INFO  : System reset is completed.
+11:14:46 INFO  : 'after 3000' command is executed.
+11:14:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:14:49 INFO  : FPGA configured successfully with bitstream "/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit"
+11:14:49 INFO  : Context for 'APU' is selected.
+11:14:49 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:14:49 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:49 INFO  : Context for 'APU' is selected.
+11:14:49 INFO  : 'ps7_init' command is executed.
+11:14:49 INFO  : 'ps7_post_config' command is executed.
+11:14:49 INFO  : 'configparams force-mem-access 0' command is executed.
+11:14:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:14:49 INFO  : Disconnected from the channel tcfchan#4.
+11:14:53 WARN  : channel "tcfchan#4" closed
+11:14:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:14:54 INFO  : 'fpga -state' command is executed.
+11:14:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:14:54 INFO  : 'jtag frequency' command is executed.
+11:14:54 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:54 INFO  : Context for 'APU' is selected.
+11:14:55 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:14:55 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:55 INFO  : Context for 'APU' is selected.
+11:14:55 INFO  : 'stop' command is executed.
+11:14:55 INFO  : 'ps7_init' command is executed.
+11:14:55 INFO  : 'ps7_post_config' command is executed.
+11:14:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:14:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:01 INFO  : The application '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:01 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:01 INFO  : Memory regions updated for context APU
+11:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:01 INFO  : 'con' command is executed.
+11:15:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+11:15:01 INFO  : Launch script is exported to file '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_aloha-he.elf_on_local.tcl'
+11:15:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:14 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:15:14 INFO  : 'jtag frequency' command is executed.
+11:15:14 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:15:14 INFO  : Context for 'APU' is selected.
+11:15:14 INFO  : System reset is completed.
+11:15:17 INFO  : 'after 3000' command is executed.
+11:15:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:15:19 INFO  : FPGA configured successfully with bitstream "/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit"
+11:15:19 INFO  : Context for 'APU' is selected.
+11:15:19 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:15:19 INFO  : 'configparams force-mem-access 1' command is executed.
+11:15:19 INFO  : Context for 'APU' is selected.
+11:15:20 INFO  : 'ps7_init' command is executed.
+11:15:20 INFO  : 'ps7_post_config' command is executed.
+11:15:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/AlohaHE_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:20 INFO  : Disconnected from the channel tcfchan#5.
+11:15:25 WARN  : channel "tcfchan#5" closed
+11:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+11:15:26 INFO  : 'fpga -state' command is executed.
+11:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:26 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:15:26 INFO  : 'jtag frequency' command is executed.
+11:15:26 INFO  : Sourcing of '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:15:26 INFO  : Context for 'APU' is selected.
+11:15:26 INFO  : Hardware design information is loaded from '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf'.
+11:15:26 INFO  : 'configparams force-mem-access 1' command is executed.
+11:15:26 INFO  : Context for 'APU' is selected.
+11:15:26 INFO  : 'stop' command is executed.
+11:15:27 INFO  : 'ps7_init' command is executed.
+11:15:27 INFO  : 'ps7_post_config' command is executed.
+11:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:33 INFO  : The application '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:33 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/AlohaHE_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/Aloha-HE/Debug/Aloha-HE.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:33 INFO  : Memory regions updated for context APU
+11:15:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:33 INFO  : 'con' command is executed.
+11:15:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+11:15:33 INFO  : Launch script is exported to file '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_aloha-he.elf_on_local.tcl'
+11:15:39 INFO  : Disconnected from the channel tcfchan#6.

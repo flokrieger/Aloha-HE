@@ -1,6 +1,28 @@
-08:21:57 **** Incremental Build of configuration Debug for project Aloha-HE ****
+13:47:39 **** Auto Build of configuration Debug for project Aloha-HE ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/Testing/ckksTest.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Testing/ckksTest.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Testing/ckksTest.d" -MT"src/Testing/ckksTest.o" -o "src/Testing/ckksTest.o" "../src/Testing/ckksTest.c"
+../src/Testing/ckksTest.c: In function 'test_hardware':
+../src/Testing/ckksTest.c:619:10: warning: unused variable 'rns_delta_max' [-Wunused-variable]
+  int64_t rns_delta_max = 1; // +/- 1
+          ^~~~~~~~~~~~~
+../src/Testing/ckksTest.c:618:9: warning: unused variable 'eps_fft_tw_storage' [-Wunused-variable]
+  double eps_fft_tw_storage = pow(2,-30);
+         ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/Testing/ckksTest.c
+ 
+Building target: Aloha-HE.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Aloha-HE_bsp/microblaze_1/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Aloha-HE.elf"  ./src/Testing/ckksTest.o  ./src/ckksAccelerator.o ./src/communication.o ./src/instruction.o ./src/main.o ./src/platform.o ./src/xtime_l.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Aloha-HE.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Aloha-HE.elf  |tee "Aloha-HE.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188204	 966688	1462668	2617560	 27f0d8	Aloha-HE.elf
+Finished building: Aloha-HE.elf.size
+ 
 
-08:21:57 Build Finished (took 167ms)
+13:47:41 Build Finished (took 1s.968ms)
 
