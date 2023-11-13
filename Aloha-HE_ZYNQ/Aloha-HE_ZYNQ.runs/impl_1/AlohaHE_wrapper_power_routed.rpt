@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Tue Nov  7 14:24:59 2023
+| Date             : Wed Nov  8 07:35:28 2023
 | Host             : ipn075 running 64-bit Ubuntu 20.04.6 LTS
 | Command          : report_power -file AlohaHE_wrapper_power_routed.rpt -pb AlohaHE_wrapper_power_summary_routed.pb -rpx AlohaHE_wrapper_power_routed.rpx
 | Design           : AlohaHE_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.462        |
+| Total On-Chip Power (W)  | 2.442        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.285        |
+| Dynamic (W)              | 2.265        |
 | Device Static (W)        | 0.177        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 56.6         |
-| Junction Temperature (C) | 53.4         |
+| Max Ambient (C)          | 56.8         |
+| Junction Temperature (C) | 53.2         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.122 |        3 |       --- |             --- |
-| Slice Logic              |     0.221 |    42570 |       --- |             --- |
-|   LUT as Logic           |     0.190 |    20508 |     53200 |           38.55 |
-|   Register               |     0.015 |    17274 |    106400 |           16.23 |
+| Clocks                   |     0.121 |        3 |       --- |             --- |
+| Slice Logic              |     0.219 |    41693 |       --- |             --- |
+|   LUT as Logic           |     0.188 |    19802 |     53200 |           37.22 |
+|   Register               |     0.015 |    17119 |    106400 |           16.09 |
 |   CARRY4                 |     0.013 |     1495 |     13300 |           11.24 |
-|   LUT as Distributed RAM |     0.002 |      468 |     17400 |            2.69 |
-|   LUT as Shift Register  |    <0.001 |      324 |     17400 |            1.86 |
-|   F7/F8 Muxes            |    <0.001 |      116 |     53200 |            0.22 |
-|   Others                 |     0.000 |     1224 |       --- |             --- |
-| Signals                  |     0.370 |    34179 |       --- |             --- |
-| Block RAM                |     0.232 |       97 |       140 |           69.29 |
-| DSPs                     |     0.074 |       56 |       220 |           25.45 |
+|   LUT as Distributed RAM |     0.003 |      468 |     17400 |            2.69 |
+|   LUT as Shift Register  |    <0.001 |      325 |     17400 |            1.87 |
+|   F7/F8 Muxes            |    <0.001 |      108 |     53200 |            0.20 |
+|   Others                 |     0.000 |     1222 |       --- |             --- |
+| Signals                  |     0.356 |    33317 |       --- |             --- |
+| Block RAM                |     0.228 |       97 |       140 |           69.29 |
+| DSPs                     |     0.075 |       56 |       220 |           25.45 |
 | PS7                      |     1.267 |        1 |       --- |             --- |
 | Static Power             |     0.177 |          |           |                 |
-| Total                    |     2.462 |          |           |                 |
+| Total                    |     2.442 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.025 |       0.999 |      0.026 |
+| Vccint    |       1.000 |     1.006 |       0.980 |      0.026 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -85,11 +85,11 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.029 |       0.019 |      0.010 |
+| Vccbram   |       1.000 |     0.028 |       0.019 |      0.010 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.698 |       0.657 |      0.041 |
+| Vccpint   |       1.000 |     0.698 |       0.657 |      0.040 |
 | Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.354 |       0.352 |      0.002 |
@@ -152,12 +152,12 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| AlohaHE_wrapper          |     2.284 |
-|   AlohaHE_i              |     2.284 |
+| AlohaHE_wrapper          |     2.265 |
+|   AlohaHE_i              |     2.265 |
 |     AXISlave8Ports_0     |     0.002 |
 |       inst               |     0.002 |
-|     ComputeCoreWrapper_0 |     0.974 |
-|       inst               |     0.974 |
+|     ComputeCoreWrapper_0 |     0.954 |
+|       inst               |     0.954 |
 |     axi_bram_ctrl_0      |     0.010 |
 |       U0                 |     0.010 |
 |     axi_cdma_0           |     0.011 |
@@ -169,8 +169,8 @@ Table of Contents
 |       inst               |     1.268 |
 |     ps7_0_axi_periph     |     0.006 |
 |       s00_couplers       |     0.006 |
-|     ps7_0_axi_periph_1   |     0.007 |
-|       s00_couplers       |     0.007 |
+|     ps7_0_axi_periph_1   |     0.006 |
+|       s00_couplers       |     0.006 |
 +--------------------------+-----------+
 
 

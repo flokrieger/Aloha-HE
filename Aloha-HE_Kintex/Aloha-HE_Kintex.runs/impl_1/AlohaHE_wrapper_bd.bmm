@@ -21,7 +21,7 @@ ADDRESS_MAP AlohaHE_i_microblaze_1 MICROBLAZE-LE 100 AlohaHE_i/microblaze_1
 
     ADDRESS_SPACE AlohaHE_i_microblaze_1_local_memory_dlmb_bram_if_cntlr RAMB32 [0X0000000000000000:0X0000000000000FFF] AlohaHE_i/microblaze_1_local_memory/dlmb_bram_if_cntlr
         BUS_BLOCK
-            AlohaHE_i/microblaze_1_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:0] [0:1023] PLACED = X2Y23;
+            AlohaHE_i/microblaze_1_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:0] [0:1023] PLACED = X2Y24;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 

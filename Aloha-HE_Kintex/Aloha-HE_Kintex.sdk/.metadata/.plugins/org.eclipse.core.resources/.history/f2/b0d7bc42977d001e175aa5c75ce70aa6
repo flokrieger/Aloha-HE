@@ -24,15 +24,15 @@
 #include "xil_cache.h"
 #include "../communication.h"
 #include "../instruction.h"
-#include <xtime_l.h>
+#include "../xtime_l.h"
 #include "../ckksAccelerator.h"
 
 /* Test and benchmark end-to-end encode+encrypt and decrypt+decode.
  * This uses the DMA and simulates productive use of the software.
  * No intermediate results are verified for correctness.
  */
-//#define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
-//#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
+#define FAST_ENCRYPTION 			// Testing end-to-end encode+encrypt
+#define FAST_DECRYPTION 			// Testing end-to-end decrypt+decode
 
 /* Uncommenting these macros execute the corresponding testcase.
  * The FFT result differs slightly depending on the twiddle factor
@@ -48,7 +48,7 @@
 //#define INV_NTT					// Tests the inverse NTT
 //#define INT_TO_FLP_DOUBLE         // Tests the conversion of integers to floating-point numbers
 //#define PWM						// Tests the point-wise multiplication
-#define EXPAND					// Tests the Expansion of plaintexts sent to the co-processor
+//#define EXPAND					// Tests the Expansion of plaintexts sent to the co-processor
 //#define RANDOM_SAMPLING			// Tests the sampling of error sampling using Trivium
 //#define KEY_SAMPLING				// Tests the sampling of the public key pk1
 //#define DMA						// Tests the DMA
@@ -65,8 +65,8 @@
 
 /***************************************************************************************************/
 
-const uint64_t CPU_FREQ_MHZ = 650;    // clock frequency of host CPU
-const uint64_t COPROC_FREQ_MHZ = 130; // clock frequency of co-processor
+const uint64_t CPU_FREQ_MHZ = 200;    // clock frequency of host CPU
+const uint64_t COPROC_FREQ_MHZ = 200; // clock frequency of co-processor
 
 #define ALIGN __attribute__((aligned(8192)))
 
@@ -1285,7 +1285,7 @@ void test_timing()
 	printf("\n\nStart timing test\n\n");
 	XTime start, end;
 	XTime_GetTime(&start);
-	for(uint32_t i = 0; i < (1<<30); ++i)
+	for(uint32_t i = 0; i < (1<<27); ++i)
 		;
 	XTime_GetTime(&end);
 	printf("Time consumed: %llu cpu cc, %.0f us\n",2*(end-start), 2.0*(end-start)/CPU_FREQ_MHZ);

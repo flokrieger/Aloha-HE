@@ -1,7 +1,0 @@
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/result_DP_reg[16]/D|
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/result_DP_reg[15]/D|
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/fft_butterfly/add_stage/denormalize_real_part/significant_b_1DP_reg[2]/D|
-+--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

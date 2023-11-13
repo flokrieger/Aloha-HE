@@ -12,7 +12,7 @@
   <Processor Endianness="Little" InstPath="AlohaHE_i/microblaze_1">
     <AddressSpace Name="AlohaHE_i_microblaze_1.AlohaHE_i_microblaze_1_local_memory_dlmb_bram_if_cntlr" Begin="0" End="4095">
       <BusBlock>
-        <BitLane MemType="RAMB36" Placement="X2Y23">
+        <BitLane MemType="RAMB36" Placement="X2Y24">
           <DataWidth MSB="31" LSB="0"/>
           <AddressRange Begin="0" End="1023"/>
           <Parity ON="false" NumBits="0"/>

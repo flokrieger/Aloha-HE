@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Nov  7 14:24:39 2023
+| Date         : Wed Nov  8 07:35:09 2023
 | Host         : ipn075 running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_drc -file AlohaHE_wrapper_drc_routed.rpt -pb AlohaHE_wrapper_drc_routed.pb -rpx AlohaHE_wrapper_drc_routed.rpx
 | Design       : AlohaHE_wrapper
@@ -24,16 +24,16 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 153
+             Violations found: 129
 +-----------+----------+-------------------------------------------------------------------+------------+
 | Rule      | Severity | Description                                                       | Violations |
 +-----------+----------+-------------------------------------------------------------------+------------+
-| DPIP-1    | Warning  | Input pipelining                                                  | 60         |
+| DPIP-1    | Warning  | Input pipelining                                                  | 48         |
 | DPOP-2    | Warning  | MREG Output pipelining                                            | 8          |
 | RTSTAT-10 | Warning  | No routable loads                                                 | 1          |
 | AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 56         |
-| REQP-20   | Advisory | enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND                   | 14         |
-| REQP-24   | Advisory | enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND                   | 14         |
+| REQP-20   | Advisory | enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND                   | 12         |
+| REQP-24   | Advisory | enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND                   | 4          |
 +-----------+----------+-------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -145,195 +145,135 @@ Related violations: <none>
 
 DPIP-1#22 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#23 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#24 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#25 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#26 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#27 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#28 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#29 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#30 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#31 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#32 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#33 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#34 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#35 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#36 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#37 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#38 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#39 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#40 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#41 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#42 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#43 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#44 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#45 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#46 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#47 Warning
 Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#48 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#49 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#50 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#51 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#52 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#53 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#54 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#55 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#56 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#57 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#58 Warning
-Input pipelining  
-DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#59 Warning
-Input pipelining  
 DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
-DPIP-1#60 Warning
+DPIP-1#48 Warning
 Input pipelining  
 DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
@@ -715,22 +655,12 @@ Related violations: <none>
 
 REQP-20#11 Advisory
 enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
 Related violations: <none>
 
 REQP-20#12 Advisory
 enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-20#13 Advisory
-enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-20#14 Advisory
-enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
 Related violations: <none>
 
 REQP-24#1 Advisory
@@ -751,56 +681,6 @@ Related violations: <none>
 REQP-24#4 Advisory
 enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
 AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#5 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#6 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#7 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#8 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#9 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#10 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#11 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#12 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#13 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
-Related violations: <none>
-
-REQP-24#14 Advisory
-enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
-AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
 Related violations: <none>
 
 
