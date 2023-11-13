@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="AlohaHE_axi_cdma_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_axi_cdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_AXISlave8Ports_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_AXISlave8Ports_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_xbar_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_axi_smc_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_proc_sys_reset_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_rst_mig_7series_0_100M_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_rst_mig_7series_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_axi_timer_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_axi_uartlite_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_clk_wiz_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_lmb_bram_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_mig_7series_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_mdm_1_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_ilmb_v10_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_dlmb_v10_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="AlohaHE_ilmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="AlohaHE_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_microblaze_1_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_microblaze_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_xbar_1_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AlohaHE_ComputeCoreWrapper_0_0_synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="AlohaHE_axi_cdma_0_0_synth_1"/>
+		<Parent Id="AlohaHE_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="AlohaHE_AXISlave8Ports_0_0_synth_1"/>
+		<Parent Id="AlohaHE_xbar_0_synth_1"/>
+		<Parent Id="AlohaHE_axi_smc_0_synth_1"/>
+		<Parent Id="AlohaHE_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="AlohaHE_rst_mig_7series_0_100M_0_synth_1"/>
+		<Parent Id="AlohaHE_axi_timer_0_0_synth_1"/>
+		<Parent Id="AlohaHE_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="AlohaHE_clk_wiz_0_0_synth_1"/>
+		<Parent Id="AlohaHE_lmb_bram_0_synth_1"/>
+		<Parent Id="AlohaHE_mig_7series_0_0_synth_1"/>
+		<Parent Id="AlohaHE_mdm_1_0_synth_1"/>
+		<Parent Id="AlohaHE_ilmb_v10_0_synth_1"/>
+		<Parent Id="AlohaHE_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="AlohaHE_dlmb_v10_0_synth_1"/>
+		<Parent Id="AlohaHE_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="AlohaHE_microblaze_1_0_synth_1"/>
+		<Parent Id="AlohaHE_xbar_1_synth_1"/>
+		<Parent Id="AlohaHE_ComputeCoreWrapper_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

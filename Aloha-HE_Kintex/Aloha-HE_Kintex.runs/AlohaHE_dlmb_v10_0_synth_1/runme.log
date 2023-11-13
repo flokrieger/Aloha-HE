@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log AlohaHE_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AlohaHE_dlmb_v10_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source AlohaHE_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1404.801 ; gain = 0.023 ; free physical = 758 ; free virtual = 4960
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP AlohaHE_dlmb_v10_0, cache-ID = 36e5a26c2176d406.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 14:32:55 2023...

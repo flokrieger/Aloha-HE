@@ -1,0 +1,29 @@
+// BMM LOC annotation file.
+//
+// SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+// Vivado v2019.1 (64-bit)
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'AlohaHE_i_microblaze_1', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP AlohaHE_i_microblaze_1 MICROBLAZE-LE 100 AlohaHE_i/microblaze_1
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'AlohaHE_i_microblaze_1' address space 'AlohaHE_i_microblaze_1_local_memory_dlmb_bram_if_cntlr' 0X0000000000000000:0X0000000000000FFF (4 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE AlohaHE_i_microblaze_1_local_memory_dlmb_bram_if_cntlr RAMB32 [0X0000000000000000:0X0000000000000FFF] AlohaHE_i/microblaze_1_local_memory/dlmb_bram_if_cntlr
+        BUS_BLOCK
+            AlohaHE_i/microblaze_1_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:0] [0:1023] PLACED = X1Y22;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

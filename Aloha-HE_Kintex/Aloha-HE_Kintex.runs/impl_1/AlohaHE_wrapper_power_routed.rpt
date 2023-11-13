@@ -1,0 +1,218 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date             : Tue Nov  7 08:06:41 2023
+| Host             : ipn075 running 64-bit Ubuntu 20.04.6 LTS
+| Command          : report_power -file AlohaHE_wrapper_power_routed.rpt -pb AlohaHE_wrapper_power_summary_routed.pb -rpx AlohaHE_wrapper_power_routed.rpx
+| Design           : AlohaHE_wrapper
+| Device           : xc7k325tffg900-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 3.489        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 3.300        |
+| Device Static (W)        | 0.189        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 78.8         |
+| Junction Temperature (C) | 31.2         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.306 |       38 |       --- |             --- |
+| Slice Logic              |     0.528 |    85157 |       --- |             --- |
+|   LUT as Logic           |     0.455 |    32610 |    203800 |           16.00 |
+|   Register               |     0.031 |    34594 |    407600 |            8.49 |
+|   CARRY4                 |     0.022 |     1864 |     50950 |            3.66 |
+|   LUT as Distributed RAM |     0.014 |     3094 |     64000 |            4.83 |
+|   LUT as Shift Register  |     0.006 |     1037 |     64000 |            1.62 |
+|   F7/F8 Muxes            |    <0.001 |      327 |    203800 |            0.16 |
+|   Others                 |    <0.001 |     2377 |       --- |             --- |
+| Signals                  |     0.760 |    65385 |       --- |             --- |
+| Block RAM                |     0.407 |     89.5 |       445 |           20.11 |
+| MMCM                     |     0.201 |        2 |        10 |           20.00 |
+| PLL                      |     0.092 |        1 |        10 |           10.00 |
+| DSPs                     |     0.196 |      100 |       840 |           11.90 |
+| I/O                      |     0.536 |       76 |       500 |           15.20 |
+| PHASER                   |     0.269 |       28 |       --- |             --- |
+| XADC                     |     0.004 |        1 |       --- |             --- |
+| Static Power             |     0.189 |          |           |                 |
+| Total                    |     3.489 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     2.332 |       2.241 |      0.090 |
+| Vccaux    |       1.800 |     0.413 |       0.384 |      0.029 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.224 |       0.223 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.036 |       0.031 |      0.005 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.022 |       0.002 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                     | Domain                                                                                                                                                                                                                   | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| AlohaHE_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK                                                                                                   | AlohaHE_i/mdm_1/U0/Use_E2.BSCAN_I/DRCK                                                                                                                                                                                   |            33.3 |
+| AlohaHE_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE                                                                                                 | AlohaHE_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0                                                                                                                                                                           |            33.3 |
+| clk_out1_AlohaHE_clk_wiz_0_0                                                                                                                              | AlohaHE_i/clk_wiz_0/inst/clk_out1_AlohaHE_clk_wiz_0_0                                                                                                                                                                    |             5.0 |
+| clk_pll_i                                                                                                                                                 | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                                                                                                                          |            10.0 |
+| clk_pll_i                                                                                                                                                 | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |            10.0 |
+| clkfbout_AlohaHE_clk_wiz_0_0                                                                                                                              | AlohaHE_i/clk_wiz_0/inst/clkfbout_AlohaHE_clk_wiz_0_0                                                                                                                                                                    |            10.0 |
+| freq_refclk                                                                                                                                               | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.2 |
+| iserdes_clkdiv                                                                                                                                            | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |            10.0 |
+| iserdes_clkdiv_1                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv       |            10.0 |
+| iserdes_clkdiv_2                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |            10.0 |
+| iserdes_clkdiv_3                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |            10.0 |
+| mem_refclk                                                                                                                                                | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                   |             2.5 |
+| oserdes_clk                                                                                                                                               | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             2.5 |
+| oserdes_clk_1                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             2.5 |
+| oserdes_clk_2                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             2.5 |
+| oserdes_clk_3                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             2.5 |
+| oserdes_clk_4                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             2.5 |
+| oserdes_clk_5                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             2.5 |
+| oserdes_clk_6                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             2.5 |
+| oserdes_clk_7                                                                                                                                             | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             2.5 |
+| oserdes_clkdiv                                                                                                                                            | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_1                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_2                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_3                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_4                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |            10.0 |
+| oserdes_clkdiv_5                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |            10.0 |
+| oserdes_clkdiv_6                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |            10.0 |
+| oserdes_clkdiv_7                                                                                                                                          | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |            10.0 |
+| pll_clk3_out                                                                                                                                              | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out                                                                                                                                 |            10.0 |
+| pll_clkfbout                                                                                                                                              | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clkfbout                                                                                                                                 |             5.0 |
+| sync_pulse                                                                                                                                                | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/sync_pulse                                                                                                                                   |            40.0 |
+| sys_diff_clock_clk_p                                                                                                                                      | sys_diff_clock_clk_p                                                                                                                                                                                                     |             5.0 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             2.5 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/A_rst_primitives_reg |             2.5 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             2.5 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk | AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/A_rst_primitives_reg |             2.5 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------+-----------+
+| Name                                | Power (W) |
++-------------------------------------+-----------+
+| AlohaHE_wrapper                     |     3.300 |
+|   AlohaHE_i                         |     3.300 |
+|     AXISlave8Ports_0                |     0.003 |
+|       inst                          |     0.003 |
+|     ComputeCoreWrapper_0            |     1.839 |
+|       inst                          |     1.839 |
+|     axi_bram_ctrl_0                 |     0.017 |
+|       U0                            |     0.017 |
+|     axi_cdma_0                      |     0.014 |
+|       U0                            |     0.014 |
+|     axi_interconnect_0              |     0.004 |
+|       xbar                          |     0.004 |
+|     axi_smc                         |     0.147 |
+|       inst                          |     0.147 |
+|     axi_timer_0                     |     0.007 |
+|       U0                            |     0.007 |
+|     axi_uartlite_0                  |     0.002 |
+|       U0                            |     0.002 |
+|     clk_wiz_0                       |     0.108 |
+|       inst                          |     0.108 |
+|     microblaze_0_axi_periph         |     0.002 |
+|       xbar                          |     0.002 |
+|     microblaze_1                    |     0.085 |
+|       U0                            |     0.085 |
+|     microblaze_1_local_memory       |     0.001 |
+|       lmb_bram                      |     0.001 |
+|     mig_7series_0                   |     1.070 |
+|       u_AlohaHE_mig_7series_0_0_mig |     1.069 |
++-------------------------------------+-----------+
+
+

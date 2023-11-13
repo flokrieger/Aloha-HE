@@ -1,0 +1,1445 @@
+
+*** Running vivado
+    with args -log AlohaHE_axi_cdma_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AlohaHE_axi_cdma_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source AlohaHE_axi_cdma_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.664 ; gain = 17.023 ; free physical = 1640 ; free virtual = 4214
+Command: synth_design -top AlohaHE_axi_cdma_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2316413 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1785.695 ; gain = 153.719 ; free physical = 1224 ; free virtual = 2532
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AlohaHE_axi_cdma_0_0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/synth/AlohaHE_axi_cdma_0_0.vhd:114]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 256 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-3491] module 'axi_cdma' declared at '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:15017' bound to instance 'U0' of component 'axi_cdma' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/synth/AlohaHE_axi_cdma_0_0.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:15317]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 256 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_cdma - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_wrap' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:8719]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_MAX_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_USE_DATAMOVER_LITE bound to: 0 - type: integer 
+	Parameter C_READ_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_WRITE_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_SF_FIFO_DEPTH bound to: 2048 - type: integer 
+	Parameter C_SOFT_RST_TIME_CLKS bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reset' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_SOFT_RST_TIME_CLKS bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1019]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1020]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1021]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1022]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1023]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1024]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 1 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen' (1#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 0 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized0' (1#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_pulse_gen__parameterized1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+	Parameter C_INCLUDE_SYNCHRO bound to: 0 - type: integer 
+	Parameter C_POS_EDGE_TRIG bound to: 1 - type: integer 
+	Parameter C_PULSE_WIDTH_CLKS bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_pulse_gen__parameterized1' (1#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:413]
+WARNING: [Synth 8-6014] Unused sequential element sig_axilite_por2rst_out_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:1197]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reset' (2#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_reg_module' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:5308]
+	Parameter C_CDMA_BUILD_MODE bound to: 0 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_lite_if' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+	Parameter C_NUM_CE bound to: 16 - type: integer 
+	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2267]
+WARNING: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2269]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2422]
+INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.awready_i_reg' into 'GEN_SYNC_WRITE.wready_i_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2254]
+INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rdy1_reg' into 'GEN_SYNC_WRITE.wready_i_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2383]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.awready_i_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2254]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.rdy1_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2383]
+INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.arvalid_re_d1_reg' into 'arready_i_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3164]
+WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_READ.arvalid_re_d1_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3164]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_lite_if' (3#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2173]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_register' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3808]
+	Parameter C_CDMA_BUILD_MODE bound to: 0 - type: integer 
+	Parameter C_NUM_REGISTERS bound to: 16 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element sg_ftch_error_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4378]
+WARNING: [Synth 8-6014] Unused sequential element sg_updt_error_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4379]
+WARNING: [Synth 8-6014] Unused sequential element error_pointer_set_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4645]
+INFO: [Synth 8-4471] merging register 'irqthresh_wren_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4030]
+INFO: [Synth 8-4471] merging register 'sg_interr_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4358]
+INFO: [Synth 8-4471] merging register 'sg_slverr_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4359]
+INFO: [Synth 8-4471] merging register 'sg_decerr_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4360]
+INFO: [Synth 8-4471] merging register 'dly_irq_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4519]
+INFO: [Synth 8-4471] merging register 'currdesc_updated_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4646]
+INFO: [Synth 8-4471] merging register 'taildesc_lsb_i_reg[31:0]' into 'curdesc_lsb_i_reg[31:0]' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3935]
+INFO: [Synth 8-4471] merging register 'tailpntr_updated_d2_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4857]
+INFO: [Synth 8-4471] merging register 'GEN_TAILUPDATE_EQL32.tailpntr_updated_d1_reg' into 'irqdelay_wren_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4819]
+WARNING: [Synth 8-6014] Unused sequential element irqthresh_wren_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4030]
+WARNING: [Synth 8-6014] Unused sequential element sg_interr_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4358]
+WARNING: [Synth 8-6014] Unused sequential element sg_slverr_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4359]
+WARNING: [Synth 8-6014] Unused sequential element sg_decerr_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4360]
+WARNING: [Synth 8-6014] Unused sequential element dly_irq_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4519]
+WARNING: [Synth 8-6014] Unused sequential element currdesc_updated_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4646]
+WARNING: [Synth 8-6014] Unused sequential element taildesc_lsb_i_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3935]
+WARNING: [Synth 8-6014] Unused sequential element GEN_TAILUPDATE_EQL32.tailpntr_updated_d1_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4819]
+WARNING: [Synth 8-6014] Unused sequential element tailpntr_updated_d2_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:4857]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_register' (4#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3808]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_reg_module' (5#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:5308]
+INFO: [Synth 8-638] synthesizing module 'axi_cdma_simple_cntlr' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:7696]
+	Parameter C_DM_CMD_WIDTH bound to: 75 - type: integer 
+	Parameter C_DM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_DM_MM2S_STATUS_WIDTH bound to: 8 - type: integer 
+	Parameter C_DM_S2MM_STATUS_WIDTH bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_BTT_WIDTH bound to: 26 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-226] default block is never used [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:8237]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_cntlr' (6#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:7696]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
+	Parameter C_M_AXI_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_M_AXI_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 256 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_MM2S_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 256 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_S2MM_INCLUDE_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_S2MM_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_ENABLE_MM2S_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_MICRO_DMA bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 72 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
+	Parameter C_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MM2S_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_MM2S_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 256 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 26 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_MM2S_GP_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+INFO: [Synth 8-4471] merging register 'sig_cmd_stat_rst_int_reg_n_reg' into 'sig_cmd_stat_rst_user_reg_n_cdc_from_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:191]
+INFO: [Synth 8-4471] merging register 'sig_mmap_rst_reg_n_reg' into 'sig_cmd_stat_rst_user_reg_n_cdc_from_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:194]
+INFO: [Synth 8-4471] merging register 'sig_stream_rst_reg_n_reg' into 'sig_cmd_stat_rst_user_reg_n_cdc_from_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_stat_rst_int_reg_n_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element sig_mmap_rst_reg_n_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element sig_stream_rst_reg_n_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (7#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_STSFIFO bound to: 1 - type: integer 
+	Parameter C_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 71 - type: integer 
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:2014]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (8#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 1 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+WARNING: [Synth 8-6014] Unused sequential element sig_inhibit_rdy_n_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:2014]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (8#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (9#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (10#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+	Parameter C_IS_MM2S bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_BTT_USED bound to: 26 - type: integer 
+	Parameter C_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 64 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+	Parameter C_OP_MODE bound to: 0 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
+	Parameter C_NUM_BYTES_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (11#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+	Parameter C_OP_MODE bound to: 1 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
+	Parameter C_NUM_BYTES_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (11#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-226] default block is never used [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (12#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_ID bound to: 0 - type: integer 
+	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10077]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10083]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 3 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (13#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (14#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (15#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (16#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (16#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (17#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 38 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 38 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 38 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 38 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (18#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_src_align_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_dest_align_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12887]
+WARNING: [Synth 8-6014] Unused sequential element sig_coelsc_reg_empty_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:13225]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (19#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S2MM_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 256 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 26 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_S2MM_GP_SF bound to: 0 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11000 - type: string 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+	Parameter C_ENABLE_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 26 - type: integer 
+	Parameter C_STS_FIFO_DEPTH bound to: 6 - type: integer 
+	Parameter C_STS_WIDTH bound to: 8 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 7 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (20#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+	Parameter C_IS_MM2S bound to: 0 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_BTT_USED bound to: 26 - type: integer 
+	Parameter C_SUPPORT_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 64 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MCDMA bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc__parameterized0' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_ID bound to: 1 - type: integer 
+	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+	Parameter C_REALIGNER_INCLUDED bound to: 0 - type: integer 
+	Parameter C_ENABLE_INDET_BTT bound to: 0 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 26 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (21#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+WARNING: [Synth 8-6014] Unused sequential element sig_single_dbeat_reg was removed.  [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:17228]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (22#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+	Parameter C_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_ADDR_LSB_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:19023]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:19024]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:19026]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:19027]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (23#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (24#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (25#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (26#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma_simple_wrap' (27#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:8719]
+INFO: [Synth 8-256] done synthesizing module 'axi_cdma' (28#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:15317]
+INFO: [Synth 8-256] done synthesizing module 'AlohaHE_axi_cdma_0_0' (29#1) [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/synth/AlohaHE_axi_cdma_0_0.vhd:114]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized0 has unconnected port num_valid_bytes[2]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized0 has unconnected port num_valid_bytes[1]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized0 has unconnected port num_valid_bytes[0]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2 has unconnected port end_addr_offset[2]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2 has unconnected port end_addr_offset[1]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2 has unconnected port end_addr_offset[0]
+WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[2]
+WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[1]
+WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[0]
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized5 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized5 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_strm_eop
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[7]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[6]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[5]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[4]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[3]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[2]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[1]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port s2mm_stbs_asserted[0]
+WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port realign2wdc_eop_error
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized1 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized1 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_addr_cntl__parameterized0 has unconnected port data2addr_data_rdy
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized4 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized4 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized3 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized3 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port calc2wsc_calc_error
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port addr2wsc_fifo_empty
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_eop
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[25]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[24]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[23]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[22]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[21]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[20]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[19]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[18]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[17]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[16]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[15]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[14]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[13]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[12]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[11]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[10]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[9]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[8]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[7]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[6]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[5]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[4]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[3]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[2]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[1]
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_bytes_rcvd[0]
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized0 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized0 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_fifo has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port secondary_awclk
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port user_reset
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[7]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[6]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[5]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[4]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[3]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[2]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[1]
+WARNING: [Synth 8-3331] design axi_datamover_cmd_status has unconnected port cache_data[0]
+WARNING: [Synth 8-3331] design axi_datamover_reset has unconnected port secondary_awclk
+WARNING: [Synth 8-3331] design axi_datamover_reset has unconnected port secondary_aresetn
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_cmd_wdata[74]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_cmd_wdata[73]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_cmd_wdata[72]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_cmd_wdata[71]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_dbg_sel[3]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_dbg_sel[2]
+WARNING: [Synth 8-3331] design axi_datamover_s2mm_full_wrap has unconnected port s2mm_dbg_sel[1]
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized2 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized2 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_rdmux has unconnected port mstr2data_saddr_lsb[2]
+WARNING: [Synth 8-3331] design axi_datamover_rdmux has unconnected port mstr2data_saddr_lsb[1]
+WARNING: [Synth 8-3331] design axi_datamover_rdmux has unconnected port mstr2data_saddr_lsb[0]
+WARNING: [Synth 8-3331] design axi_datamover_addr_cntl has unconnected port data2addr_data_rdy
+WARNING: [Synth 8-3331] design axi_datamover_rd_status_cntl has unconnected port calc2rsc_calc_error
+WARNING: [Synth 8-3331] design axi_datamover_rd_status_cntl has unconnected port addr2rsc_calc_error
+WARNING: [Synth 8-3331] design axi_datamover_rd_status_cntl has unconnected port addr2rsc_fifo_empty
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_cmd_wdata[74]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_cmd_wdata[73]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_cmd_wdata[72]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_cmd_wdata[71]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_dbg_sel[3]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_dbg_sel[2]
+WARNING: [Synth 8-3331] design axi_datamover_mm2s_full_wrap has unconnected port mm2s_dbg_sel[1]
+WARNING: [Synth 8-3331] design axi_cdma_simple_cntlr has unconnected port reg2cntlr_sg_mode
+WARNING: [Synth 8-3331] design axi_cdma_simple_cntlr has unconnected port mm2s2cntl_sts_tstrb[0]
+WARNING: [Synth 8-3331] design axi_cdma_simple_cntlr has unconnected port s2mm2cntl_sts_tstrb[0]
+WARNING: [Synth 8-3331] design axi_cdma_register has unconnected port axi2ip_wrce[15]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:40 ; elapsed = 00:07:39 . Memory (MB): peak = 1952.414 ; gain = 320.438 ; free physical = 4503 ; free virtual = 6475
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:40 ; elapsed = 00:07:40 . Memory (MB): peak = 1961.320 ; gain = 329.344 ; free physical = 4484 ; free virtual = 6456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:40 ; elapsed = 00:07:40 . Memory (MB): peak = 1961.320 ; gain = 329.344 ; free physical = 4484 ; free virtual = 6456
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/AlohaHE_axi_cdma_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/AlohaHE_axi_cdma_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/AlohaHE_axi_cdma_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ip/AlohaHE_axi_cdma_0_0/AlohaHE_axi_cdma_0_0.xdc] for cell 'U0'
+Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_axi_cdma_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_axi_cdma_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.102 ; gain = 0.000 ; free physical = 4329 ; free virtual = 6336
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2104.102 ; gain = 0.000 ; free physical = 4325 ; free virtual = 6332
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:06:49 ; elapsed = 00:07:49 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 4300 ; free virtual = 6331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:06:49 ; elapsed = 00:07:49 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 4300 ; free virtual = 6331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_axi_cdma_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:49 ; elapsed = 00:07:49 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 4303 ; free virtual = 6333
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rst_wvalid_re_reg' into 'GEN_SYNC_WRITE.bvalid_i_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:2300]
+INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.rst_rvalid_re_reg' into 'GEN_SYNC_READ.s_axi_lite_rvalid_i_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/699c/hdl/axi_cdma_v4_1_vh_rfs.vhd:3071]
+INFO: [Synth 8-802] inferred FSM for state register 'sig_sm_state_reg' in module 'axi_cdma_simple_cntlr'
+INFO: [Synth 8-5545] ROM "var_start_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "var_end_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "var_start_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "var_end_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
+INFO: [Synth 8-4471] merging register 'sig_coelsc_cmd_cmplt_reg_reg' into 'sig_coelsc_reg_full_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12425]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18758]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18182]
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+             wait_for_go |                         00000010 |                              001
+               ld_dm_cmd |                         00000100 |                              010
+         get_mm2s_status |                         00001000 |                              011
+         get_s2mm_status |                         00010000 |                              100
+            score_status |                         00100000 |                              101
+               xfer_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_sm_state_reg' using encoding 'one-hot' in module 'axi_cdma_simple_cntlr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:51 ; elapsed = 00:07:52 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 4258 ; free virtual = 6298
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 6     
+	   3 Input      3 Bit       Adders := 4     
++---Registers : 
+	               71 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 19    
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 266   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 11    
+	   2 Input      8 Bit        Muxes := 34    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 110   
+	   8 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_cdma_pulse_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axi_cdma_pulse_gen__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axi_cdma_pulse_gen__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module axi_cdma_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_cdma_lite_if 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 35    
+Module axi_cdma_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_cdma_reg_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module axi_cdma_simple_cntlr 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 4     
+Module axi_datamover_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module axi_datamover_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	               71 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_datamover_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_datamover_rd_status_cntl 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module axi_datamover_strb_gen2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_datamover_strb_gen2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+Module axi_datamover_pcc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 3     
+Module cntr_incr_decr_addn_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module srl_fifo_rbu_f 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_datamover_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module axi_datamover_addr_cntl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module srl_fifo_rbu_f__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_datamover_fifo__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module axi_datamover_rddata_cntl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module axi_datamover_mm2s_full_wrap 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cntr_incr_decr_addn_f__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module srl_fifo_rbu_f__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_datamover_fifo__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module srl_fifo_rbu_f__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_datamover_fifo__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module axi_datamover_wr_status_cntl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module axi_datamover_addr_cntl__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module srl_fifo_rbu_f__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_datamover_fifo__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module axi_datamover_wrdata_cntl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module axi_datamover_skid2mm_buf 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_datamover_pcc__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 3     
+Module axi_datamover_s2mm_full_wrap 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_MSTR_PCC/sig_input_user_type_reg_reg[3:0]' into 'I_MSTR_PCC/sig_input_cache_type_reg_reg[3:0]' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8040]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' into 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/sig_rd_xfer_cmplt_reg' into 'I_RD_DATA_CNTL/sig_last_mmap_dbeat_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:12507]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' into 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/sig_halt_reg_reg' into 'I_WR_STATUS_CNTLR/sig_halt_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:15993]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/sig_halt_reg_dly1_reg' into 'I_WR_STATUS_CNTLR/sig_halt_reg_dly1_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:17422]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/sig_halt_reg_dly2_reg' into 'I_WR_DATA_CNTL/sig_halt_reg_dly2_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18852]
+INFO: [Synth 8-4471] merging register 'I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:19064]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' into 'GEN_INCLUDE_PCC.I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_PCC.I_MSTR_PCC/sig_input_user_type_reg_reg[3:0]' into 'GEN_INCLUDE_PCC.I_MSTR_PCC/sig_input_cache_type_reg_reg[3:0]' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:8040]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/sig_halt_reg_dly3_reg' into 'I_WR_DATA_CNTL/sig_halt_reg_dly3_reg' [/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.srcs/sources_1/bd/AlohaHE/ipshared/e644/hdl/axi_datamover_v5_1_vh_rfs.vhd:18796]
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[12]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[13]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[14]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[3]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_sm_ld_calc2_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_sm_ld_calc3_reg_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[34]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[12]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[13]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[14]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_sm_ld_calc3_reg_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[3]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_sm_ld_calc2_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_drr_reg_reg' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_eof_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_input_drr_reg_reg' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_input_eof_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/FSM_onehot_sig_sm_state_reg[6]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/sig_sm_set_err_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg' (FD) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RESET/sig_cmd_stat_rst_user_reg_n_cdc_from_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[7]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[8]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[8] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[9]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[9] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[10]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[10] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[11]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/dmacr_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/curdesc_lsb_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/irqdelay_wren_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_REG_MODULE/I_REGISTER_BLOCK/GEN_DMACR_SIMPLE.dmacr_i_reg[13] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' (FD) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_mmap_reset_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_RESET/sig_s_h_halt_reg_reg' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RESET/sig_s_h_halt_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_STATUS_CNTLR/sig_halt_reg_reg' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_halt_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_halt_reg_dly1_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_STATUS_CNTLR/sig_halt_reg_dly1_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_halt_reg_dly2_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/sig_halt_reg_dly2_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_halt_reg_dly3_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/sig_halt_reg_dly3_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' (FDS) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[0]' (FDS) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[0]'
+INFO: [Synth 8-3332] Sequential element (GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/FSM_onehot_sig_sm_state_reg[7]) is unused and will be removed from module axi_cdma.
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/FSM_onehot_sig_sm_state_reg[2]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/sig_sm_clr_idle_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/FSM_onehot_sig_sm_state_reg[5]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/I_SIMPLE_DMA_CNTLR/sig_sm_pop_s2mm_sts_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[2]' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_sm_ld_calc1_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_sm_ld_calc1_reg_reg' (FDR) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_burst_reg_reg[1]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_burst_reg_reg[1]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_size_reg_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:05 ; elapsed = 00:08:07 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 3067 ; free virtual = 5386
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:18 ; elapsed = 00:08:21 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2620 ; free virtual = 5017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:22 ; elapsed = 00:08:25 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2497 ; free virtual = 4905
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_bytes_to_mbaa_ireg1_reg[11]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_PCC.I_MSTR_PCC/sig_addr_aligned_ireg1_reg'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_bytes_to_mbaa_ireg1_reg[11]' (FDRE) to 'U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_aligned_ireg1_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:25 ; elapsed = 00:08:28 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2336 ; free virtual = 4755
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:28 ; elapsed = 00:08:31 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2227 ; free virtual = 4678
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:28 ; elapsed = 00:08:31 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2227 ; free virtual = 4678
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:28 ; elapsed = 00:08:31 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2219 ; free virtual = 4673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:29 ; elapsed = 00:08:31 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2219 ; free virtual = 4673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:29 ; elapsed = 00:08:32 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2219 ; free virtual = 4673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:29 ; elapsed = 00:08:32 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2219 ; free virtual = 4673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                 | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[3] | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[3] | 38     | 38         | 38     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | INFERRED_GEN.data_reg[5] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | INFERRED_GEN.data_reg[3] | 36     | 36         | 36     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | INFERRED_GEN.data_reg[5] | 7      | 7          | 7      | 0       | 0      | 0      | 0      | 
++------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    42|
+|2     |LUT1   |    10|
+|3     |LUT2   |   110|
+|4     |LUT3   |   228|
+|5     |LUT4   |   194|
+|6     |LUT5   |   158|
+|7     |LUT6   |   305|
+|8     |MUXF7  |    10|
+|9     |SRL16E |   149|
+|10    |FDRE   |  1134|
+|11    |FDSE   |    36|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------+----------------------------------------+------+
+|      |Instance                                                 |Module                                  |Cells |
++------+---------------------------------------------------------+----------------------------------------+------+
+|1     |top                                                      |                                        |  2376|
+|2     |  U0                                                     |axi_cdma                                |  2376|
+|3     |    \GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP                  |axi_cdma_simple_wrap                    |  2376|
+|4     |      \GEN_DM_FULL.I_DATAMOVER_FULL                      |axi_datamover                           |  1975|
+|5     |        \GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER               |axi_datamover_mm2s_full_wrap            |   803|
+|6     |          I_ADDR_CNTL                                    |axi_datamover_addr_cntl                 |   109|
+|7     |            \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO              |axi_datamover_fifo__parameterized1_7    |    58|
+|8     |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f_8                            |    55|
+|9     |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f_9                        |    55|
+|10    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f_10                |     8|
+|11    |                  DYNSHREG_F_I                           |dynshreg_f_11                           |    46|
+|12    |          I_CMD_STATUS                                   |axi_datamover_cmd_status_2              |    78|
+|13    |            \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO          |axi_datamover_fifo__parameterized0_5    |    12|
+|14    |            I_CMD_FIFO                                   |axi_datamover_fifo_6                    |    66|
+|15    |          I_MSTR_PCC                                     |axi_datamover_pcc                       |   463|
+|16    |          I_RD_DATA_CNTL                                 |axi_datamover_rddata_cntl               |   140|
+|17    |            \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO         |axi_datamover_fifo__parameterized2      |    60|
+|18    |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f__parameterized0              |    57|
+|19    |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f__parameterized0          |    57|
+|20    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f_4                 |    15|
+|21    |                  DYNSHREG_F_I                           |dynshreg_f__parameterized0              |    40|
+|22    |          I_RD_STATUS_CNTLR                              |axi_datamover_rd_status_cntl            |     8|
+|23    |          I_RESET                                        |axi_datamover_reset_3                   |     5|
+|24    |        \GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER               |axi_datamover_s2mm_full_wrap            |  1136|
+|25    |          \GEN_INCLUDE_PCC.I_MSTR_PCC                    |axi_datamover_pcc__parameterized0       |   510|
+|26    |          I_ADDR_CNTL                                    |axi_datamover_addr_cntl__parameterized0 |   109|
+|27    |            \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO              |axi_datamover_fifo__parameterized1      |    59|
+|28    |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f                              |    56|
+|29    |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f                          |    56|
+|30    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f_1                 |     9|
+|31    |                  DYNSHREG_F_I                           |dynshreg_f                              |    46|
+|32    |          I_CMD_STATUS                                   |axi_datamover_cmd_status                |    79|
+|33    |            \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO          |axi_datamover_fifo__parameterized0      |    12|
+|34    |            I_CMD_FIFO                                   |axi_datamover_fifo                      |    67|
+|35    |          I_RESET                                        |axi_datamover_reset                     |     1|
+|36    |          I_S2MM_MMAP_SKID_BUF                           |axi_datamover_skid2mm_buf               |   219|
+|37    |          I_WR_DATA_CNTL                                 |axi_datamover_wrdata_cntl               |   147|
+|38    |            \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO         |axi_datamover_fifo__parameterized5      |    60|
+|39    |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f__parameterized3              |    57|
+|40    |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f__parameterized3          |    57|
+|41    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f                   |    15|
+|42    |                  DYNSHREG_F_I                           |dynshreg_f__parameterized3              |    40|
+|43    |          I_WR_STATUS_CNTLR                              |axi_datamover_wr_status_cntl            |    71|
+|44    |            \GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO  |axi_datamover_fifo__parameterized4      |    26|
+|45    |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f__parameterized2              |    23|
+|46    |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f__parameterized2          |    23|
+|47    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f__parameterized0_0 |    11|
+|48    |                  DYNSHREG_F_I                           |dynshreg_f__parameterized2              |    11|
+|49    |            I_WRESP_STATUS_FIFO                          |axi_datamover_fifo__parameterized3      |    23|
+|50    |              \USE_SRL_FIFO.I_SYNC_FIFO                  |srl_fifo_f__parameterized1              |    20|
+|51    |                I_SRL_FIFO_RBU_F                         |srl_fifo_rbu_f__parameterized1          |    20|
+|52    |                  CNTR_INCR_DECR_ADDN_F_I                |cntr_incr_decr_addn_f__parameterized0   |    10|
+|53    |                  DYNSHREG_F_I                           |dynshreg_f__parameterized1              |     4|
+|54    |      I_SIMPLE_DMA_CNTLR                                 |axi_cdma_simple_cntlr                   |    38|
+|55    |      I_SIMPLE_REG_MODULE                                |axi_cdma_reg_module                     |   295|
+|56    |        I_AXI_LITE                                       |axi_cdma_lite_if                        |   174|
+|57    |        I_REGISTER_BLOCK                                 |axi_cdma_register                       |   116|
+|58    |      I_SIMPLE_RST_MODULE                                |axi_cdma_reset                          |    68|
+|59    |        I_SOFT_RST_CLR_PULSE                             |axi_cdma_pulse_gen__parameterized0      |     5|
+|60    |        I_SOFT_RST_POS_EDGE_DTCT                         |axi_cdma_pulse_gen__parameterized1      |     3|
+|61    |        I_SOFT_RST_PULSEGEN                              |axi_cdma_pulse_gen                      |    22|
++------+---------------------------------------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:29 ; elapsed = 00:08:32 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2219 ; free virtual = 4673
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:25 ; elapsed = 00:08:28 . Memory (MB): peak = 2104.102 ; gain = 329.344 ; free physical = 2267 ; free virtual = 4721
+Synthesis Optimization Complete : Time (s): cpu = 00:07:29 ; elapsed = 00:08:32 . Memory (MB): peak = 2104.102 ; gain = 472.125 ; free physical = 2267 ; free virtual = 4721
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.102 ; gain = 0.000 ; free physical = 2364 ; free virtual = 4819
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:42 ; elapsed = 00:08:47 . Memory (MB): peak = 2104.102 ; gain = 697.688 ; free physical = 2478 ; free virtual = 4932
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.102 ; gain = 0.000 ; free physical = 2478 ; free virtual = 4932
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_axi_cdma_0_0_synth_1/AlohaHE_axi_cdma_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP AlohaHE_axi_cdma_0_0, cache-ID = 0878ebc17aec0922
+INFO: [Coretcl 2-1174] Renamed 60 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.113 ; gain = 0.000 ; free physical = 2554 ; free virtual = 5079
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_axi_cdma_0_0_synth_1/AlohaHE_axi_cdma_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AlohaHE_axi_cdma_0_0_utilization_synth.rpt -pb AlohaHE_axi_cdma_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 16:10:22 2023...

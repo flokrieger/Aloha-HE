@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="AlohaHE_wrapper_hw_platform_0-microblaze_1-initElf"/>
+	<item value="AlohaHE_wrapper.mmi" key="AlohaHE_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="AlohaHE_wrapper_hw_platform_0-device"/>
+	<item value="false" key="AlohaHE_wrapper_hw_platform_0-partial_bit"/>
+	<item value="AlohaHE_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="AlohaHE_wrapper.bit" key="AlohaHE_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="AlohaHE_wrapper_hw_platform_0-target"/>
+</section>

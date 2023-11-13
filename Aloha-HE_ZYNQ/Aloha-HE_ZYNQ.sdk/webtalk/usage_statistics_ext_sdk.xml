@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webTalkData  fileName='usage_statistics_ext_sdk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Nov  6 10:58:17 2023'>
+<section name="__ROOT__" level="0" order="1" description="">
+ <section name="software_version_and_target_device" level="1" order="1" description="">
+  <keyValuePair key="beta" value="false" description="" />
+  <keyValuePair key="build_version" value="2019.1" description="" />
+  <keyValuePair key="date_generated" value="2023-11-06 10:58:15" description="" />
+  <keyValuePair key="os_platform" value="amd64" description="" />
+  <keyValuePair key="product_version" value="SDK v2019.1" description="" />
+  <keyValuePair key="project_id" value="2019.1_15" description="" />
+  <keyValuePair key="project_iteration" value="15" description="" />
+  <keyValuePair key="random_id" value="rp8p1dljqv6c247vrpuin7ft73" description="" />
+  <keyValuePair key="registration_id" value="212791380_1777579907_210779915_564" description="" />
+  <keyValuePair key="route_design" value="NA" description="" />
+  <keyValuePair key="target_device" value="NA" description="" />
+  <keyValuePair key="target_family" value="NA" description="" />
+  <keyValuePair key="target_package" value="NA" description="" />
+  <keyValuePair key="target_speed" value="NA" description="" />
+  <keyValuePair key="tool_flow" value="SDK" description="" />
+ </section>
+ <section name="user_environment" level="1" order="2" description="">
+  <keyValuePair key="cpu_name" value="AMD Ryzen 7 PRO 3700U w/ Radeon Vega Mobile Gfx" description="" />
+  <keyValuePair key="cpu_speed" value="1400.000 MHz" description="" />
+  <keyValuePair key="os_name" value="Ubuntu" description="" />
+  <keyValuePair key="os_release" value="Ubuntu 20.04.6 LTS" description="" />
+  <keyValuePair key="system_ram" value="14.522 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
+ </section>
+ <section name="sdk" level="1" order="3" description="">
+  <section name="application/1699260034000" level="2" order="1" description="">
+   <keyValuePair key="apptemplate" value="empty_application" description="" />
+   <keyValuePair key="bspid" value="1699260032000" description="" />
+   <keyValuePair key="hwid" value="1699259929000" description="" />
+   <keyValuePair key="langused" value="C" description="" />
+   <keyValuePair key="newbsp" value="true" description="" />
+   <keyValuePair key="os" value="standalone" description="" />
+   <keyValuePair key="procused" value="ps7_cortexa9" description="" />
+   <keyValuePair key="projsize" value="3390.60546875" description="" />
+   <keyValuePair key="recordtype" value="APPCreation" description="" />
+   <keyValuePair key="uid" value="1699260034000" description="" />
+  </section>
+  <section name="bsp/1699260032000" level="2" order="2" description="">
+   <keyValuePair key="apptemplate" value="empty_application" description="" />
+   <keyValuePair key="hwid" value="1699259929000" description="" />
+   <keyValuePair key="os" value="standalone" description="" />
+   <keyValuePair key="recordtype" value="BSPCreation" description="" />
+   <keyValuePair key="uid" value="1699260032000" description="" />
+  </section>
+  <section name="bsp/1699264695472" level="2" order="3" description="">
+   <keyValuePair key="bootgencount" value="0" description="" />
+   <keyValuePair key="crosstriggcount" value="0" description="" />
+   <keyValuePair key="debugcount" value="41" description="" />
+   <keyValuePair key="flashcount" value="0" description="" />
+   <keyValuePair key="perfcount" value="0" description="" />
+   <keyValuePair key="qemudebugcount" value="0" description="" />
+   <keyValuePair key="recordtype" value="ToolUsage" description="" />
+   <keyValuePair key="uid" value="NA" description="" />
+  </section>
+  <section name="hardware/1699259929000" level="2" order="4" description="">
+   <keyValuePair key="apptemplate" value="NA" description="" />
+   <keyValuePair key="arch" value="zynq" description="" />
+   <keyValuePair key="device" value="7z020" description="" />
+   <keyValuePair key="ishandoff" value="true" description="" />
+   <keyValuePair key="iszynq" value="true" description="" />
+   <keyValuePair key="iszynqmp" value="false" description="" />
+   <keyValuePair key="os" value="NA" description="" />
+   <keyValuePair key="processors" value="2" description="" />
+   <keyValuePair key="recordtype" value="HWCreation" description="" />
+   <keyValuePair key="uid" value="1699259929000" description="" />
+   <keyValuePair key="vivadoversion" value="2019.1" description="" />
+  </section>
+ </section>
+ <section name="vivado_usage" level="1" order="4" description="">
+ </section>
+</section>
+</webTalkData>

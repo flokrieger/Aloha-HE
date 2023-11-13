@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS=-O3 -Wall -std=c99
+
+pke: 
+	$(CC) $(CFLAGS) -o pke mod_q_arithmetic.c randombytes.c indcpa_pke.c test_pke.c
+
+clean:
+	rm -f pke

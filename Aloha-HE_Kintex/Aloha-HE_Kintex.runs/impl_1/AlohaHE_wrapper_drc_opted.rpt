@@ -1,0 +1,879 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Tue Nov  7 07:54:00 2023
+| Host         : ipn075 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_drc -file AlohaHE_wrapper_drc_opted.rpt -pb AlohaHE_wrapper_drc_opted.pb -rpx AlohaHE_wrapper_drc_opted.rpx
+| Design       : AlohaHE_wrapper
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 166
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| BUFC-1    | Warning  | Input Buffer Connections                                          | 4          |
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties               | 1          |
+| DPIP-1    | Warning  | Input pipelining                                                  | 52         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 8          |
+| REQP-1709 | Warning  | Clock output buffering                                            | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 100        |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 (in AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[1].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 (in AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[1].gen_dqs_diff.u_iobuf_dqs macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[2].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 (in AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[2].gen_dqs_diff.u_iobuf_dqs macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[3].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 (in AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[3].gen_dqs_diff.u_iobuf_dqs macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive input AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive multiplier stage AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1709#1 Warning
+Clock output buffering  
+PLLE2_ADV connectivity violation. The signal AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out on the AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of AlohaHE_i/mig_7series_0/u_AlohaHE_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#19 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#20 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#21 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#22 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#23 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#24 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#25 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#26 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#27 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#28 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#29 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#30 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#31 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#32 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#33 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#34 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#35 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#36 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#37 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#38 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#39 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#40 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#41 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#42 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#43 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#44 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/mult_pool/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#45 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#46 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#47 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_0/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#48 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#49 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#50 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_1/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#51 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#52 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#53 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/ntt_butterfly_2/multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#54 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#55 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#56 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#57 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#58 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#59 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#60 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#61 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#62 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#63 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#64 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[0].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#65 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#66 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#67 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#68 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#69 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#70 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#71 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#72 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#73 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#74 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#75 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[1].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#76 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#77 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#78 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#79 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#80 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#81 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#82 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#83 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#84 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#85 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#86 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[2].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#87 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/ah_x_bh_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#88 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#89 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/ah_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#90 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#91 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#92 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#93 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/al_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#94 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#95 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bh_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#96 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#97 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/int_mult/genblk1[3].int_mult/am_x_bl_mult/dsp_a_x_b_p_c/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#98 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage1/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#99 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage2/dsp_mult/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#100 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/stage3/dsp_mult_add/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+
