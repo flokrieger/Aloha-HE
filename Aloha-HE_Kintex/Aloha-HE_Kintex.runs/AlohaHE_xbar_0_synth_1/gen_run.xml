@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="AlohaHE_xbar_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1699339035">
-  <File Type="PA-TCL" Name="AlohaHE_xbar_0.tcl"/>
   <File Type="REPORTS-TCL" Name="AlohaHE_xbar_0_reports.tcl"/>
-  <File Type="RDS-RDS" Name="AlohaHE_xbar_0.vds"/>
+  <File Type="PA-TCL" Name="AlohaHE_xbar_0.tcl"/>
   <File Type="RDS-DCP" Name="AlohaHE_xbar_0.dcp"/>
+  <File Type="RDS-RDS" Name="AlohaHE_xbar_0.vds"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AlohaHE_xbar_0">
     <File Path="$PSRCDIR/sources_1/bd/AlohaHE/ip/AlohaHE_xbar_0/AlohaHE_xbar_0.xci">
       <FileInfo>

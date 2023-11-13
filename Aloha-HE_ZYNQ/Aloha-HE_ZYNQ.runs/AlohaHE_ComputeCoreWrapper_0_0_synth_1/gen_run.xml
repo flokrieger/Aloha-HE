@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="AlohaHE_ComputeCoreWrapper_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1699347954">
+<GenRun Id="AlohaHE_ComputeCoreWrapper_0_0_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1699361779">
   <File Type="VDS-TIMING-PB" Name="AlohaHE_ComputeCoreWrapper_0_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="AlohaHE_ComputeCoreWrapper_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="AlohaHE_ComputeCoreWrapper_0_0.dcp"/>
@@ -46,9 +46,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019">
+      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
     </StratHandle>
-    <Step Id="synth_design"/>
+    <Step Id="synth_design">
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="RepFanoutThreshold">400</Option>
+      <Option Id="NoCombineLuts">1</Option>
+    </Step>
   </Strategy>
 </GenRun>

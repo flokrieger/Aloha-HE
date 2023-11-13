@@ -3583,3 +3583,108 @@ mb-size Aloha-HE.elf  |tee "Aloha-HE.elf.size"
  188204	 966688	1462668	2617560	 27f0d8	Aloha-HE.elf
 Finished building: Aloha-HE.elf.size
  
+18:16:11 **** Clean-only build of project Aloha-HE_bsp ****
+make -k clean 
+make -C microblaze_1/libsrc/tmrctr_v4_5/src -s clean 
+make -C microblaze_1/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_1/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_1/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_1/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_1/libsrc/axicdma_v4_5/src -s clean 
+rm -f microblaze_1/lib/libxil.a
+18:16:12 **** Clean-only build of configuration Debug for project Aloha-HE ****
+make clean 
+rm -rf  ./src/Testing/ckksTest.o  ./src/ckksAccelerator.o ./src/communication.o ./src/instruction.o ./src/main.o ./src/platform.o ./src/xtime_l.o  ./src/Testing/ckksTest.d  ./src/ckksAccelerator.d ./src/communication.d ./src/instruction.d ./src/main.d ./src/platform.d ./src/xtime_l.d  Aloha-HE.elf.size  Aloha-HE.elf
+ 
+18:16:12 **** Build of project Aloha-HE_bsp ****
+make -k all 
+Running Make include in microblaze_1/libsrc/tmrctr_v4_5/src
+make -C microblaze_1/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_1/libsrc/standalone_v7_0/src
+make -C microblaze_1/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_1/libsrc/uartlite_v3_2/src
+make -C microblaze_1/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_1/libsrc/bram_v4_3/src
+make -C microblaze_1/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_1/libsrc/cpu_v2_9/src
+make -C microblaze_1/libsrc/cpu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_1/libsrc/axicdma_v4_5/src
+make -C microblaze_1/libsrc/axicdma_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_1/libsrc/tmrctr_v4_5/src
+make -C microblaze_1/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_1/libsrc/standalone_v7_0/src
+make -C microblaze_1/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_1/libsrc/uartlite_v3_2/src
+make -C microblaze_1/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_1/libsrc/bram_v4_3/src
+make -C microblaze_1/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_1/libsrc/cpu_v2_9/src
+make -C microblaze_1/libsrc/cpu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_1/libsrc/axicdma_v4_5/src
+make -C microblaze_1/libsrc/axicdma_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling axicdma
+Finished building libraries
+18:16:14 **** Build of configuration Debug for project Aloha-HE ****
+make all 
+Building file: ../src/Testing/ckksTest.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Testing/ckksTest.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Testing/ckksTest.d" -MT"src/Testing/ckksTest.o" -o "src/Testing/ckksTest.o" "../src/Testing/ckksTest.c"
+../src/Testing/ckksTest.c: In function 'test_hardware':
+../src/Testing/ckksTest.c:619:10: warning: unused variable 'rns_delta_max' [-Wunused-variable]
+  int64_t rns_delta_max = 1; // +/- 1
+          ^~~~~~~~~~~~~
+../src/Testing/ckksTest.c:618:9: warning: unused variable 'eps_fft_tw_storage' [-Wunused-variable]
+  double eps_fft_tw_storage = pow(2,-30);
+         ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/Testing/ckksTest.c
+ 
+Building file: ../src/ckksAccelerator.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ckksAccelerator.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ckksAccelerator.d" -MT"src/ckksAccelerator.o" -o "src/ckksAccelerator.o" "../src/ckksAccelerator.c"
+Finished building: ../src/ckksAccelerator.c
+ 
+Building file: ../src/communication.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/communication.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/communication.d" -MT"src/communication.o" -o "src/communication.o" "../src/communication.c"
+Finished building: ../src/communication.c
+ 
+Building file: ../src/instruction.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/instruction.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/instruction.d" -MT"src/instruction.o" -o "src/instruction.o" "../src/instruction.c"
+Finished building: ../src/instruction.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/xtime_l.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtime_l.o" -I../../Aloha-HE_bsp/microblaze_1/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xtime_l.d" -MT"src/xtime_l.o" -o "src/xtime_l.o" "../src/xtime_l.c"
+Finished building: ../src/xtime_l.c
+ 
+Building target: Aloha-HE.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Aloha-HE_bsp/microblaze_1/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Aloha-HE.elf"  ./src/Testing/ckksTest.o  ./src/ckksAccelerator.o ./src/communication.o ./src/instruction.o ./src/main.o ./src/platform.o ./src/xtime_l.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Aloha-HE.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Aloha-HE.elf  |tee "Aloha-HE.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188204	 966688	1462668	2617560	 27f0d8	Aloha-HE.elf
+Finished building: Aloha-HE.elf.size
+ 

@@ -1,4 +1,4 @@
-11:59:27 **** Build of project Aloha-HE_bsp ****
+18:16:12 **** Build of project Aloha-HE_bsp ****
 make -k all 
 Running Make include in microblaze_1/libsrc/tmrctr_v4_5/src
 make -C microblaze_1/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -36,5 +36,5 @@ make -C microblaze_1/libsrc/axicdma_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=
 Compiling axicdma
 Finished building libraries
 
-11:59:29 Build Finished (took 2s.383ms)
+18:16:14 Build Finished (took 2s.185ms)
 

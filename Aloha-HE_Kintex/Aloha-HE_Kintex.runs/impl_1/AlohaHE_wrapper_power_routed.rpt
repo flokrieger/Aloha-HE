@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Tue Nov  7 11:52:37 2023
+| Date             : Tue Nov  7 18:11:35 2023
 | Host             : ipn075 running 64-bit Ubuntu 20.04.6 LTS
 | Command          : report_power -file AlohaHE_wrapper_power_routed.rpt -pb AlohaHE_wrapper_power_summary_routed.pb -rpx AlohaHE_wrapper_power_routed.rpx
 | Design           : AlohaHE_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.396        |
+| Total On-Chip Power (W)  | 3.155        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.208        |
-| Device Static (W)        | 0.188        |
+| Dynamic (W)              | 2.968        |
+| Device Static (W)        | 0.187        |
 | Effective TJA (C/W)      | 1.8          |
-| Max Ambient (C)          | 79.0         |
-| Junction Temperature (C) | 31.0         |
+| Max Ambient (C)          | 79.4         |
+| Junction Temperature (C) | 30.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.299 |       38 |       --- |             --- |
-| Slice Logic              |     0.507 |    84358 |       --- |             --- |
-|   LUT as Logic           |     0.436 |    32022 |    203800 |           15.71 |
-|   Register               |     0.030 |    34438 |    407600 |            8.45 |
-|   CARRY4                 |     0.022 |     1864 |     50950 |            3.66 |
-|   LUT as Distributed RAM |     0.013 |     3094 |     64000 |            4.83 |
-|   LUT as Shift Register  |     0.006 |     1038 |     64000 |            1.62 |
-|   F7/F8 Muxes            |    <0.001 |      319 |    203800 |            0.16 |
-|   Others                 |    <0.001 |     2376 |       --- |             --- |
-| Signals                  |     0.711 |    64575 |       --- |             --- |
-| Block RAM                |     0.395 |     89.5 |       445 |           20.11 |
+| Clocks                   |     0.271 |       38 |       --- |             --- |
+| Slice Logic              |     0.427 |    77919 |       --- |             --- |
+|   LUT as Logic           |     0.364 |    29555 |    203800 |           14.50 |
+|   Register               |     0.025 |    31379 |    407600 |            7.70 |
+|   CARRY4                 |     0.020 |     1662 |     50950 |            3.26 |
+|   LUT as Distributed RAM |     0.014 |     3094 |     64000 |            4.83 |
+|   LUT as Shift Register  |     0.005 |      976 |     64000 |            1.53 |
+|   F7/F8 Muxes            |    <0.001 |      323 |    203800 |            0.16 |
+|   Others                 |    <0.001 |     2167 |       --- |             --- |
+| Signals                  |     0.616 |    59131 |       --- |             --- |
+| Block RAM                |     0.444 |      104 |       445 |           23.37 |
 | MMCM                     |     0.201 |        2 |        10 |           20.00 |
 | PLL                      |     0.092 |        1 |        10 |           10.00 |
-| DSPs                     |     0.193 |      100 |       840 |           11.90 |
+| DSPs                     |     0.107 |       56 |       840 |            6.67 |
 | I/O                      |     0.536 |       76 |       500 |           15.20 |
 | PHASER                   |     0.269 |       28 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
-| Static Power             |     0.188 |          |           |                 |
-| Total                    |     3.396 |          |           |                 |
+| Static Power             |     0.187 |          |           |                 |
+| Total                    |     3.155 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.240 |       2.151 |      0.090 |
+| Vccint    |       1.000 |     1.995 |       1.907 |      0.089 |
 | Vccaux    |       1.800 |     0.413 |       0.384 |      0.029 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -89,7 +89,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.036 |       0.031 |      0.005 |
+| Vccbram   |       1.000 |     0.040 |       0.035 |      0.006 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -185,34 +185,34 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| AlohaHE_wrapper                     |     3.208 |
-|   AlohaHE_i                         |     3.208 |
-|     AXISlave8Ports_0                |     0.002 |
-|       inst                          |     0.002 |
-|     ComputeCoreWrapper_0            |     1.751 |
-|       inst                          |     1.751 |
-|     axi_bram_ctrl_0                 |     0.015 |
-|       U0                            |     0.015 |
+| AlohaHE_wrapper                     |     2.968 |
+|   AlohaHE_i                         |     2.968 |
+|     AXISlave8Ports_0                |     0.003 |
+|       inst                          |     0.003 |
+|     ComputeCoreWrapper_0            |     1.514 |
+|       inst                          |     1.514 |
+|     axi_bram_ctrl_0                 |     0.016 |
+|       U0                            |     0.016 |
 |     axi_cdma_0                      |     0.014 |
 |       U0                            |     0.014 |
 |     axi_interconnect_0              |     0.004 |
 |       xbar                          |     0.004 |
-|     axi_smc                         |     0.145 |
-|       inst                          |     0.145 |
+|     axi_smc                         |     0.143 |
+|       inst                          |     0.143 |
 |     axi_timer_0                     |     0.007 |
 |       U0                            |     0.007 |
-|     axi_uartlite_0                  |     0.001 |
-|       U0                            |     0.001 |
+|     axi_uartlite_0                  |     0.002 |
+|       U0                            |     0.002 |
 |     clk_wiz_0                       |     0.108 |
 |       inst                          |     0.108 |
-|     microblaze_0_axi_periph         |     0.001 |
-|       xbar                          |     0.001 |
+|     microblaze_0_axi_periph         |     0.002 |
+|       xbar                          |     0.002 |
 |     microblaze_1                    |     0.084 |
 |       U0                            |     0.084 |
 |     microblaze_1_local_memory       |     0.001 |
 |       lmb_bram                      |     0.001 |
-|     mig_7series_0                   |     1.073 |
-|       u_AlohaHE_mig_7series_0_0_mig |     1.072 |
+|     mig_7series_0                   |     1.070 |
+|       u_AlohaHE_mig_7series_0_0_mig |     1.069 |
 +-------------------------------------+-----------+
 
 

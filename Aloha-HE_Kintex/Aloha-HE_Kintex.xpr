@@ -458,26 +458,56 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_ilmb_bram_if_cntlr_0/AlohaHE_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="AlohaHE_ilmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_dlmb_v10_0/AlohaHE_dlmb_v10_0.xci">
-          <Proxy FileSetName="AlohaHE_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_uartlite_0_0/AlohaHE_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="AlohaHE_axi_uartlite_0_0"/>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_proc_sys_reset_0_0/AlohaHE_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="AlohaHE_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_cdma_0_0/AlohaHE_axi_cdma_0_0.xci">
           <Proxy FileSetName="AlohaHE_axi_cdma_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_dlmb_v10_0/AlohaHE_dlmb_v10_0.xci">
+          <Proxy FileSetName="AlohaHE_dlmb_v10_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_xbar_0/AlohaHE_xbar_0.xci">
           <Proxy FileSetName="AlohaHE_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_microblaze_1_0/AlohaHE_microblaze_1_0.xci">
+          <Proxy FileSetName="AlohaHE_microblaze_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_rst_mig_7series_0_100M_0/AlohaHE_rst_mig_7series_0_100M_0.xci">
+          <Proxy FileSetName="AlohaHE_rst_mig_7series_0_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_smc_0/AlohaHE_axi_smc_0.xci">
+          <Proxy FileSetName="AlohaHE_axi_smc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_xbar_1/AlohaHE_xbar_1.xci">
+          <Proxy FileSetName="AlohaHE_xbar_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_lmb_bram_0/AlohaHE_lmb_bram_0.xci">
+          <Proxy FileSetName="AlohaHE_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_AXISlave8Ports_0_0/AlohaHE_AXISlave8Ports_0_0.xci">
+          <Proxy FileSetName="AlohaHE_AXISlave8Ports_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_mig_7series_0_0/AlohaHE_mig_7series_0_0.xci">
+          <Proxy FileSetName="AlohaHE_mig_7series_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_ComputeCoreWrapper_0_0/AlohaHE_ComputeCoreWrapper_0_0.xci">
+          <Proxy FileSetName="AlohaHE_ComputeCoreWrapper_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_timer_0_0/AlohaHE_axi_timer_0_0.xci">
           <Proxy FileSetName="AlohaHE_axi_timer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_smc_0/AlohaHE_axi_smc_0.xci">
-          <Proxy FileSetName="AlohaHE_axi_smc_0"/>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_ilmb_bram_if_cntlr_0/AlohaHE_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="AlohaHE_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_mdm_1_0/AlohaHE_mdm_1_0.xci">
+          <Proxy FileSetName="AlohaHE_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_bram_ctrl_0_0/AlohaHE_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="AlohaHE_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_uartlite_0_0/AlohaHE_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="AlohaHE_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_dlmb_bram_if_cntlr_0/AlohaHE_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="AlohaHE_dlmb_bram_if_cntlr_0"/>
@@ -485,38 +515,8 @@
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_clk_wiz_0_0/AlohaHE_clk_wiz_0_0.xci">
           <Proxy FileSetName="AlohaHE_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_mdm_1_0/AlohaHE_mdm_1_0.xci">
-          <Proxy FileSetName="AlohaHE_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_microblaze_1_0/AlohaHE_microblaze_1_0.xci">
-          <Proxy FileSetName="AlohaHE_microblaze_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_xbar_1/AlohaHE_xbar_1.xci">
-          <Proxy FileSetName="AlohaHE_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_axi_bram_ctrl_0_0/AlohaHE_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="AlohaHE_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_ComputeCoreWrapper_0_0/AlohaHE_ComputeCoreWrapper_0_0.xci">
-          <Proxy FileSetName="AlohaHE_ComputeCoreWrapper_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_AXISlave8Ports_0_0/AlohaHE_AXISlave8Ports_0_0.xci">
-          <Proxy FileSetName="AlohaHE_AXISlave8Ports_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_ilmb_v10_0/AlohaHE_ilmb_v10_0.xci">
           <Proxy FileSetName="AlohaHE_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_lmb_bram_0/AlohaHE_lmb_bram_0.xci">
-          <Proxy FileSetName="AlohaHE_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_proc_sys_reset_0_0/AlohaHE_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="AlohaHE_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_mig_7series_0_0/AlohaHE_mig_7series_0_0.xci">
-          <Proxy FileSetName="AlohaHE_mig_7series_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="AlohaHE.bd" FileRelPathName="ip/AlohaHE_rst_mig_7series_0_100M_0/AlohaHE_rst_mig_7series_0_100M_0.xci">
-          <Proxy FileSetName="AlohaHE_rst_mig_7series_0_100M_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/AlohaHE/hdl/AlohaHE_wrapper.v">
@@ -716,12 +716,12 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design">
-          <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="NoCombineLuts">1</Option>
           <Option Id="ResourceSharing">2</Option>
           <Option Id="FsmExtraction">1</Option>
-          <Option Id="KeepEquivalentRegisters">1</Option>
           <Option Id="ShregMinSize">5</Option>
+          <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>

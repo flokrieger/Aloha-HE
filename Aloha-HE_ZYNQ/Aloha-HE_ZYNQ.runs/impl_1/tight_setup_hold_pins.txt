@@ -1,8 +1,7 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/ntt_e1_bank0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[7]|
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/fft_bram/lower_bank1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIPADIP[0]|
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/fft_bram/higher_bank0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[1]|
-|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/ntt_e1_bank0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DIADI[5]|
+|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/result_DP_reg[16]/D|
+|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/unif_tw_fct_gen/modular_multiplier/reduction/result_DP_reg[15]/D|
+|               clk_fpga_0 |               clk_fpga_0 |AlohaHE_i/ComputeCoreWrapper_0/inst/CORE/unified_transform/fft_butterfly/add_stage/denormalize_real_part/significant_b_1DP_reg[2]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

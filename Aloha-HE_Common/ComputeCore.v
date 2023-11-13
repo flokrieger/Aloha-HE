@@ -13,12 +13,12 @@ module ComputeCore(clk, rst,
 //////////////////////////// Config Start //////////////////////////////////
 // Set this to 1 for generating FFT twiddle factors on the fly
 // Set this to 0 for using stored FFT twiddle factors
-localparam FFT_ON_THE_FLY_GENERATION = 1;
+localparam FFT_ON_THE_FLY_GENERATION = 0;
 
 // Set this to 1 to instantiate read and write logic for each BRAM.
 // This is used for testing purposes. All tests for intermediate results
 // needs this to be set to 1.
-localparam PROVIDE_DEBUG_IO = 0;
+localparam PROVIDE_DEBUG_IO = 1;
 //////////////////////////// Config End ////////////////////////////////////
 
 

@@ -2416,3 +2416,19 @@ con
 ----------------End of Script----------------
 
 13:47:25 INFO  : Disconnected from the channel tcfchan#2.
+18:16:01 INFO  : Registering command handlers for SDK TCF services
+18:16:03 INFO  : Launching XSCT server: xsct -n -interactive /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.sdk/temp_xsdb_launch_script.tcl
+18:16:06 INFO  : XSCT server has started successfully.
+18:16:06 INFO  : Successfully done setting XSCT server connection channel  
+18:16:06 INFO  : Successfully done setting SDK workspace  
+18:16:06 INFO  : Processing command line option -hwspec /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.sdk/AlohaHE_wrapper.hdf.
+18:16:06 INFO  : Checking for hwspec changes in the project AlohaHE_wrapper_hw_platform_0.
+18:16:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1699377264000,  Project:1699354458000
+18:16:09 INFO  : The hardware specification for project 'AlohaHE_wrapper_hw_platform_0' is different from /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.sdk/AlohaHE_wrapper.hdf.
+18:16:09 INFO  : Copied contents of /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_Kintex/Aloha-HE_Kintex.sdk/AlohaHE_wrapper.hdf into /AlohaHE_wrapper_hw_platform_0/system.hdf.
+18:16:09 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:16:10 INFO  : 
+18:16:11 INFO  : Updating hardware inferred compiler options for Aloha-HE.
+18:16:11 INFO  : Clearing existing target manager status.
+18:16:11 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:16:12 WARN  : Linker script will not be updated automatically. Users need to update it manually.

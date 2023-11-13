@@ -127,12 +127,12 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom  -dir /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1 -new_name AlohaHE_ComputeCoreWrapper_0_0 -ip [get_ips AlohaHE_ComputeCoreWrapper_0_0]]
+set cached_ip [config_ip_cache -export -no_bom  -synth_opts { -fanout_limit 400 -fsm_extraction one_hot -resource_sharing off -no_lc -shreg_min_size 5 }  -dir /home/fkrieger/Desktop/Aloha-HE/Aloha-HE_ZYNQ/Aloha-HE_ZYNQ.runs/AlohaHE_ComputeCoreWrapper_0_0_synth_1 -new_name AlohaHE_ComputeCoreWrapper_0_0 -ip [get_ips AlohaHE_ComputeCoreWrapper_0_0]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top AlohaHE_ComputeCoreWrapper_0_0 -part xc7z020clg400-1 -mode out_of_context
+synth_design -top AlohaHE_ComputeCoreWrapper_0_0 -part xc7z020clg400-1 -fanout_limit 400 -fsm_extraction one_hot -resource_sharing off -no_lc -shreg_min_size 5 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache
@@ -157,7 +157,7 @@ catch {
  lappend ipCachedFiles AlohaHE_ComputeCoreWrapper_0_0_sim_netlist.vhdl
 set TIME_taken [expr [clock seconds] - $TIME_start]
 
- config_ip_cache -add -dcp AlohaHE_ComputeCoreWrapper_0_0.dcp -move_files $ipCachedFiles -use_project_ipc  -synth_runtime $TIME_taken  -ip [get_ips AlohaHE_ComputeCoreWrapper_0_0]
+ config_ip_cache -add -dcp AlohaHE_ComputeCoreWrapper_0_0.dcp -move_files $ipCachedFiles  -synth_opts { -fanout_limit 400 -fsm_extraction one_hot -resource_sharing off -no_lc -shreg_min_size 5 } -use_project_ipc  -synth_runtime $TIME_taken  -ip [get_ips AlohaHE_ComputeCoreWrapper_0_0]
 }
 
 rename_ref -prefix_all AlohaHE_ComputeCoreWrapper_0_0_
