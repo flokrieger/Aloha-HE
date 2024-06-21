@@ -2,7 +2,7 @@
 
 This repository provides the source code of **Aloha-HE**, a hardware accelerator for client-side operations in homomorphic encryption. Aloha-HE targets the CKKS scheme and supports all operations required during encode+encrypt and decode+decrypt in hardware. We publish the source code for the Xilinx ZYNQ-7000 and Kintex-7 FPGA platforms.
 
-The according paper "[Aloha-HE: A Low-Area Hardware Accelerator for Client-Side Operations in Homomorphic Encryption](https://eprint.iacr.org/2023/1736)" with a detailed explanation of Aloha-HE is available as pre-print and has been accepted for the DATE'24 conference.
+The according paper "Aloha-HE: A Low-Area Hardware Accelerator for Client-Side Operations in Homomorphic Encryption" with a detailed explanation of Aloha-HE has been accepted for the DATE'24 conference. You can find the conference paper [here](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10546608) and the preprint [here](https://eprint.iacr.org/2023/1736).
 
 All content of this repo is for academic research use only. It does not come with any support, warranty, or responsibility.
 
@@ -51,12 +51,15 @@ Sujoy Sinha Roy  -  `sujoy.sinharoy (at) iaik.tugraz.at`
 If you use Aloha-HE in your research/study, please cite our work:
 
 ```
-@misc{cryptoeprint:2023/1736,
-      author = {Florian Krieger and Florian Hirner and Ahmet Can Mert and Sujoy Sinha Roy},
-      title = {Aloha-HE: A Low-Area Hardware Accelerator for Client-Side Operations in Homomorphic Encryption},
-      howpublished = {Cryptology ePrint Archive, Paper 2023/1736},
-      year = {2023},
-      note = {\url{https://eprint.iacr.org/2023/1736}},
-      url = {https://eprint.iacr.org/2023/1736}
+@INPROCEEDINGS{aloha_he,
+  author={Krieger, Florian and Hirner, Florian and Mert, Ahmet Can and Roy, Sujoy Sinha},
+  booktitle={2024 Design, Automation & Test in Europe Conference & Exhibition (DATE)}, 
+  title={Aloha-HE: A Low-Area Hardware Accelerator for Client-Side Operations in Homomorphic Encryption}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={},
+  url = {https://ieeexplore.ieee.org/document/10546608}
 }
 ```
