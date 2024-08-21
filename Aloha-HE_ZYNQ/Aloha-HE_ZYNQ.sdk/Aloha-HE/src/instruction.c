@@ -55,7 +55,7 @@ uint64_t getNTTTransformationInstructionWord(uint8_t isDIF, uint8_t log_q, uint8
 // @param qm: The 17-bit value of the modulus q = 2^(log_q[i]+46) - (qm << 24) + 1
 uint64_t getRNSInstructionWord(uint16_t log_scale, uint8_t log_q, uint8_t modulus_rom_index, uint32_t qm)
 {
-	assert(scale < (1<<12));
+	assert(log_scale < (1<<12));
 	assert(log_q < (1<<4));
 	assert(modulus_rom_index < (1<<4));
 	assert(qm < (1<<17));
@@ -76,7 +76,7 @@ uint64_t getRNSInstructionWord(uint16_t log_scale, uint8_t log_q, uint8_t modulu
 // @param qm: The 17-bit value of the modulus q = 2^(log_q[i]+46) - (qm << 24) + 1
 uint64_t getI2FInstructionWord(int16_t log_scale, uint8_t log_q, uint32_t qm)
 {
-	assert(!(scale < -(1<<8) || scale >= (1<<8)));
+	assert(!(log_scale < -(1<<8) || log_scale >= (1<<8)));
 	assert(log_q < (1<<4));
 	assert(qm < (1<<17));
 

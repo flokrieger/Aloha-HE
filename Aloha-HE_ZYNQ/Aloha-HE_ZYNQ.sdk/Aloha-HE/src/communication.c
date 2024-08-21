@@ -153,8 +153,9 @@ uint32_t int_bitreverse(uint32_t x, uint32_t bits)
 // This function sends num_words many 64-bit words from the RAM address p to the co-processor.
 // It is used for sending instructions (INS_flag = 1) to the instruction memory and
 // for sending data to BRAMs (INS_flag = 0) with bram_sel defining the destination BRAM.
-// Sending data via this function is for testing purpose only. The hardware must
-// have the PROVIDE_DEBUG_IO set to 1 (ComputeCore.v).
+// While sending instructions to instruction memory is always needed, sending data to BRAMs via 
+// this function is for testing purposes only. The hardware must
+// have the PROVIDE_DEBUG_IO set to 1 (ComputeCore.v) to support sending data to BRAMs.
 void send64(uint64_t *p, uint32_t num_words, uint32_t INS_flag, uint32_t bram_sel)
 {
 	uint32_t i;
