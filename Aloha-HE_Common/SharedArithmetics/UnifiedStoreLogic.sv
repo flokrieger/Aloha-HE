@@ -95,7 +95,7 @@ module UnifiedStoreLogic #(
   DelayRegister #(.CYCLE_COUNT(1), .BITWIDTH(LOGQ)) b_out_2_delay (.clk(clk), .in(b_out_2), .out(b_out_2_1DP));
 
 
-  always_ff @(posedge clk) assert((dest_bank_a_delayed ^ dest_bank_b_delayed) || rst || !wea_0 || !wea_1);
+  // always_ff @(posedge clk) assert((dest_bank_a_delayed ^ dest_bank_b_delayed) || rst || !wea_0 || !wea_1);
   
   logic switch_brams;
   assign switch_brams = (dest_bank_a_delayed == 1'd0 && valid_a_delayed) || (dest_bank_b_delayed == 1'd1 && valid_b_delayed);

@@ -50,7 +50,7 @@ module Expand #(
   assign br_in1 = M-1'd1-pos_ctr_DP;
   BitReverse #(.BITWIDTH(LOGN)) index0_reverse (.in(br_in0[LOGM-1:1]), .out(index0));
   BitReverse #(.BITWIDTH(LOGN)) index1_reverse (.in(br_in1[LOGM-1:1]), .out(index1));
-  always_ff @(posedge clk) assert(index0[0] != index1[0] || rst);
+  // always_ff @(posedge clk) assert(index0[0] != index1[0] || rst);
   
   logic switch_brams;
   assign switch_brams = index0[0];

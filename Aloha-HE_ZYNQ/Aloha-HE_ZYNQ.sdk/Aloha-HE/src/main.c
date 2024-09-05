@@ -22,10 +22,14 @@ int main()
 
 	axi_address_base = (uint32_t*)0x40000000;
 
+	axi_address_base[1] = 1; // reset the co-processor
+
 	cdmaWaitForIdle(); // waits for the DMA to be configured and ready.
 	extern void initIndexMap();
 	initIndexMap(); // initializes the index map for projection (for testing only)
 	ckks_init(); // initializes software-internal data structures for CKKS.
+
+	axi_address_base[1] = 0; // release reset again
 
 	int test_type = 0;
 

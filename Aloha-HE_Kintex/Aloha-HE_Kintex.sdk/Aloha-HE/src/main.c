@@ -21,12 +21,16 @@ int main()
     init_platform();
 
 	axi_address_base = (uint32_t*)XPAR_AXISLAVE8PORTS_0_BASEADDR;
+	
+	axi_address_base[1] = 1; // reset the co-processor
 
 	cdmaWaitForIdle(); // waits for the DMA to be configured and ready.
 	extern void initIndexMap();
 	initIndexMap(); // initializes the index map for projection (for testing only)
 	ckks_init(); // initializes software-internal data structures for CKKS.
 	initTimer(); // initializes timer to measure performance and latency.
+
+	axi_address_base[1] = 0; // release reset again
 
 	int test_type = 0;
 
