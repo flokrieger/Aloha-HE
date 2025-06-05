@@ -34,17 +34,17 @@ This flashes the FPGA and the software.
 
 
 ## Contributors
-Florian Krieger  -  `florian.krieger (at) iaik.tugraz.at`
+Florian Krieger  -  `florian.krieger (at) tugraz.at`
 
-Florian Hirner  -  `florian.hirner (at) iaik.tugraz.at`
+Florian Hirner  -  `florian.hirner (at) tugraz.at`
 
-Ahmet Can Mert  -  `ahmet.mert (at) iaik.tugraz.at`
+Ahmet Can Mert  -  `ahmet.mert (at) tugraz.at`
 
-Sujoy Sinha Roy  -  `sujoy.sinharoy (at) iaik.tugraz.at`
+Sujoy Sinha Roy  -  `sujoy.sinharoy (at) tugraz.at`
 
 -----
 
-[Institute of Applied Information Processing and Communications](https://www.iaik.tugraz.at/), Graz University of Technology, Austria
+[Institute of Information Security](https://www.isec.tugraz.at/), Graz University of Technology, Austria
 
 -----
 
